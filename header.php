@@ -14,12 +14,13 @@
 
     <div class="lxs">
         <div class="in">
-            <span>UI designer,</span>
-            <span>Graphic designer,</span>
-            <span>Pindakaas lover</span>
+            <?php if (have_rows('opsomming_load', 'option')) : ?>
+                <?php while (have_rows('opsomming_load', 'option')) : the_row(); ?>
+                    <span><?php the_sub_field('content'); ?></span>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
         <div class="ba slidein">
         </div>
     </div>
-
     <main>

@@ -50,10 +50,3 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offs
   .setTween(tween)
   .addTo(controller);
 
-
-
-  jQuery(document).ready(function () {
-    window.setTimeout(function(){
-        jQuery('.lxs').addClass('ready');
-    }, 3000); //<-- Delay in milliseconds
-  });
