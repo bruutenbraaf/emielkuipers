@@ -122,32 +122,20 @@
   100% {
     opacity: 1;
     top: 0; } }
-.ready .in span {
-  opacity: 1;
-  -webkit-animation: fadeOut;
-  -moz-animation: fadeOut;
-  animation: fadeOut;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1.2s;
-  -moz-animation-duration: 1.2s;
-  animation-duration: 1.2s; }
-.ready .ba {
-  bottom: initial;
-  top: 0;
-  height: 100vh;
-  -webkit-animation: slideOut;
-  -moz-animation: slideOut;
-  animation: slideOut;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-  animation-delay: 0.6s; }
-  .ready .ba:before {
+.ready {
+  pointer-events: none; }
+  .ready .in span {
+    opacity: 1;
+    -webkit-animation: fadeOut;
+    -moz-animation: fadeOut;
+    animation: fadeOut;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    animation-duration: 1.2s; }
+  .ready .ba {
     bottom: initial;
     top: 0;
     height: 100vh;
@@ -160,21 +148,35 @@
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     animation-duration: 1s;
-    animation-delay: 0.7s; }
-  .ready .ba:after {
-    bottom: initial;
-    top: 0;
-    height: 100vh;
-    -webkit-animation: slideOut;
-    -moz-animation: slideOut;
-    animation: slideOut;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
-    animation-delay: 0.8s; }
+    animation-delay: 0.6s; }
+    .ready .ba:before {
+      bottom: initial;
+      top: 0;
+      height: 100vh;
+      -webkit-animation: slideOut;
+      -moz-animation: slideOut;
+      animation: slideOut;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      animation-duration: 1s;
+      animation-delay: 0.7s; }
+    .ready .ba:after {
+      bottom: initial;
+      top: 0;
+      height: 100vh;
+      -webkit-animation: slideOut;
+      -moz-animation: slideOut;
+      animation: slideOut;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      animation-duration: 1s;
+      animation-delay: 0.8s; }
 
 @keyframes slideOut {
   0% {

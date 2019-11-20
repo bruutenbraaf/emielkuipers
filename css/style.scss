@@ -169,6 +169,7 @@ $barWidth: 33.3333333vw;
 }
 
 .ready {
+  pointer-events: none;
   .in {
     span {
       opacity: 1;
