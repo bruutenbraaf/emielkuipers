@@ -30,10 +30,7 @@ $SilkaBold: "SilkaBold", Arial, sans-serif;
 
 // Colors
 
-$rose: #fc1264;
-$turquoise: #35ffb6;
-$midnight: #001f3f;
-$yellow: #fdbb2c;
+$color: #3c3750;
 
 // Nav height
 
@@ -189,20 +186,20 @@ $barWidth: 33.3333333vw;
   .ba {
     bottom: initial;
     top: 0;
-    height:100vh;
+    height: 100vh;
     @include slideOut;
     animation-delay: 0.6s;
     &:before {
       bottom: initial;
       top: 0;
-      height:100vh;
+      height: 100vh;
       @include slideOut;
       animation-delay: 0.7s;
     }
     &:after {
       bottom: initial;
       top: 0;
-      height:100vh;
+      height: 100vh;
       @include slideOut;
       animation-delay: 0.8s;
     }
@@ -234,6 +231,67 @@ $barWidth: 33.3333333vw;
     .in {
       span:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.3}s;
+      }
+    }
+  }
+}
+
+// Navigation
+
+
+.actv {
+  .branding {
+    -webkit-animation: fadeIn;
+    -moz-animation: fadeIn;
+    animation: fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+  }
+  .main_nav {
+    -webkit-animation: fadeIn;
+    -moz-animation: fadeIn;
+    animation: fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    animation-delay: 1.6s;
+  }
+}
+
+nav {
+  .branding {
+    position: relative;
+    top: -30px;
+    opacity: 0;
+  }
+  .row {
+    min-height: 120px;
+    .main_nav {
+      position: relative;
+      top: -30px;
+      opacity: 0;
+      ul {
+        margin: 0 -20px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        li {
+          padding: 0px 10px;
+          margin: 0px 10px;
+          a {
+            font-size: 16px;
+            line-height: 42px;
+            color: $color;
+          }
+        }
       }
     }
   }

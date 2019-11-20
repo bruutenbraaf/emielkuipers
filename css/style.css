@@ -218,4 +218,50 @@
 .lxs .in span:nth-child(10n) {
   animation-delay: 3s; }
 
+.actv .branding {
+  -webkit-animation: fadeIn;
+  -moz-animation: fadeIn;
+  animation: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  animation-delay: 1.2s; }
+.actv .main_nav {
+  -webkit-animation: fadeIn;
+  -moz-animation: fadeIn;
+  animation: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  animation-delay: 1.6s; }
+
+nav .branding {
+  position: relative;
+  top: -30px;
+  opacity: 0; }
+nav .row {
+  min-height: 120px; }
+  nav .row .main_nav {
+    position: relative;
+    top: -30px;
+    opacity: 0; }
+    nav .row .main_nav ul {
+      margin: 0 -20px;
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      nav .row .main_nav ul li {
+        padding: 0px 10px;
+        margin: 0px 10px; }
+        nav .row .main_nav ul li a {
+          font-size: 16px;
+          line-height: 42px;
+          color: #3c3750; }
+
 /*# sourceMappingURL=style.css.map */
