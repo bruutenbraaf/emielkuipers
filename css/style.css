@@ -246,6 +246,7 @@ nav .branding {
   top: -30px;
   opacity: 0; }
 nav .row {
+  padding: 0px 15px;
   min-height: 120px; }
   nav .row .main_nav {
     position: relative;
