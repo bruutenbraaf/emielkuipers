@@ -244,9 +244,9 @@
 nav .branding {
   position: relative;
   top: -30px;
-  opacity: 0; }
+  opacity: 0;
+  padding: 0px 15px; }
 nav .row {
-  padding: 0px 15px;
   min-height: 120px; }
   nav .row .main_nav {
     position: relative;
@@ -254,7 +254,7 @@ nav .row {
     opacity: 0; }
     nav .row .main_nav ul {
       margin: 0 -20px;
-      padding: 0;
+      padding: 0px 15px;
       list-style: none;
       display: flex; }
       nav .row .main_nav ul li {
