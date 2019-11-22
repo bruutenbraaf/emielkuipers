@@ -245,52 +245,63 @@
   animation-duration: 1.2s;
   animation-delay: 1.6s; }
 
-nav .branding {
-  position: relative;
-  top: -30px;
-  opacity: 0;
-  padding: 0px 15px; }
-nav .row {
-  min-height: 120px; }
-  nav .row .main_nav {
+nav {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 55; }
+  nav .branding {
     position: relative;
     top: -30px;
-    opacity: 0; }
-    nav .row .main_nav ul {
-      margin: 0 -20px;
-      padding: 0px 15px;
-      list-style: none;
-      display: flex; }
-      nav .row .main_nav ul li {
-        padding: 0px 10px;
-        margin: 0px 10px; }
-        nav .row .main_nav ul li a {
-          font-size: 16px;
-          line-height: 42px;
-          color: #3c3750; }
-
-.int {
-  padding-top: 130px; }
-  .int span {
-    display: block;
-    overflow: hidden; }
-    .int span p {
-      font-size: 52px;
-      color: #3c3750;
-      font-weight: 700;
+    opacity: 0;
+    padding: 0px 15px; }
+  nav .row {
+    min-height: 120px; }
+    nav .row .main_nav {
       position: relative;
-      top: 80px;
-      margin: 0px;
-      font-family: "SilkaBold", Arial, sans-serif; }
-      .int span p b {
-        font-family: "SilkaBold", Arial, sans-serif;
+      top: -30px;
+      opacity: 0; }
+      nav .row .main_nav ul {
+        margin: 0 -20px;
+        padding: 0px 15px;
+        list-style: none;
+        display: flex; }
+        nav .row .main_nav ul li {
+          padding: 0px 10px;
+          margin: 0px 10px; }
+          nav .row .main_nav ul li a {
+            font-size: 16px;
+            line-height: 42px;
+            color: #3c3750; }
+
+.in_h {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center; }
+  .in_h .int {
+    padding-top: 130px; }
+    .in_h .int span {
+      display: block;
+      overflow: hidden; }
+      .in_h .int span p {
         font-size: 52px;
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        -moz-text-stroke-color: #3c3750;
-        -webkit-text-stroke-color: #3c3750;
-        -moz-text-stroke-width: 2px;
-        -webkit-text-stroke-width: 2px; }
+        color: #3c3750;
+        font-weight: 700;
+        position: relative;
+        top: 80px;
+        margin: 0px;
+        font-family: "SilkaBold", Arial, sans-serif; }
+        .in_h .int span p b {
+          font-family: "SilkaBold", Arial, sans-serif;
+          font-size: 52px;
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          -moz-text-stroke-color: #3c3750;
+          -webkit-text-stroke-color: #3c3750;
+          -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px; }
 
 .acv span p {
   -webkit-animation: slidesIn;

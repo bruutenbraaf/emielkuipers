@@ -269,6 +269,11 @@ $barWidth: 33.3333333vw;
 }
 
 nav {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 55;
   .branding {
     position: relative;
     top: -30px;
@@ -301,29 +306,34 @@ nav {
 }
 
 // Homepage intro
-
-.int {
-  padding-top: 130px;
-  span {
-    display: block;
-    overflow: hidden;
-    p {
-      font-size: 52px;
-      color: $color;
-      font-weight: 700;
-      position: relative;
-      top: 80px;
-      margin: 0px;
-      font-family: $SilkaBold;
-      b {
-        font-family: $SilkaBold;
+.in_h {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  .int {
+    padding-top: 130px;
+    span {
+      display: block;
+      overflow: hidden;
+      p {
         font-size: 52px;
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        -moz-text-stroke-color: $color;
-        -webkit-text-stroke-color: $color;
-        -moz-text-stroke-width: 2px;
-        -webkit-text-stroke-width: 2px;
+        color: $color;
+        font-weight: 700;
+        position: relative;
+        top: 80px;
+        margin: 0px;
+        font-family: $SilkaBold;
+        b {
+          font-family: $SilkaBold;
+          font-size: 52px;
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          -moz-text-stroke-color: $color;
+          -webkit-text-stroke-color: $color;
+          -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px;
+        }
       }
     }
   }

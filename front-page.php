@@ -13,23 +13,27 @@ get_header(); ?>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="offset-md-1 col-md-10 int">
-            <span>
-                <p>Mijn naam is emiel,</p>
-            </span>
-            <span>
-                <p>ik ontwerp <b>user needs</b></p>
-            </span>
-            <span>
-                <p>en hou van Pindakaas.</p>
-            </span>
-        </div>
-        <div class="offset-md-2 col-md-5 int__p">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante odio at sit tempus sed fermentum. Sit enim nulla fermentum vitae tempor cursus. Erat commodo, sed in viverra dictumst. Est nulla adipiscing pharetra, laoreet rhoncus, morbi tristique</p>
-        </div>
-    </div>
-</div>
+<?php if (have_rows('intro')) : ?>
+    <?php while (have_rows('intro')) : the_row(); ?>
+        <section class="in_h">
+            <div class="container">
+                <div class="row">
+                    <?php if (have_rows('intro_titels')) : ?>
+                        <div class="offset-md-1 col-md-10 int">
+                            <?php while (have_rows('intro_titels')) : the_row(); ?>
+                                <span>
+                                    <p><?php the_sub_field('regel'); ?></p>
+                                </span>
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
+                    <div class="offset-md-2 col-md-5 int__p">
+                        <?php the_sub_field( 'intro_tekst' ); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>
