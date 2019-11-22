@@ -27,7 +27,7 @@ get_header(); ?>
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>
-                    <div class="offset-md-2 col-md-8 int__p">
+                    <div class="offset-md-2 col-md-7 int__p">
                         <?php the_sub_field( 'intro_tekst' ); ?>
                     </div>
                 </div>
