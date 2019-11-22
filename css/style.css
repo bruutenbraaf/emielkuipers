@@ -552,6 +552,9 @@ nav {
 
   .int__p p {
     font-size: 16px;
-    line-height: 28px; } }
+    line-height: 28px; }
+
+  .proj .h__proj .inf h3 {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
