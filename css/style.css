@@ -526,5 +526,15 @@ nav {
     transform: scale(1); }
   100% {
     transform: scale(1.2); } }
+@media (max-width: 1196px) {
+  .proj .h__proj {
+    height: 288px;
+    margin: 0px 40px 20px 40px; }
+
+  .proj .h__proj .im {
+    min-height: 288px; }
+
+  .proj .h__proj .im .im_g {
+    min-height: 288px; } }
 
 /*# sourceMappingURL=style.css.map */

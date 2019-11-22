@@ -7,5 +7,7 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'h__vi')
     .addTo(controller)
+    .addIndicators()
+    .offset(-200)
     .reverse(false);
 }
