@@ -28,12 +28,42 @@ get_header(); ?>
                         </div>
                     <?php endif; ?>
                     <div class="offset-md-2 col-md-7 int__p">
-                        <?php the_sub_field( 'intro_tekst' ); ?>
+                        <?php the_sub_field('intro_tekst'); ?>
                     </div>
                 </div>
             </div>
         </section>
     <?php endwhile; ?>
 <?php endif; ?>
+
+<section class="proj">
+    <div class="container">
+        <div class="row">
+            <?php $loop = new WP_Query(array(
+                'post_type' => 'case_study',
+                'posts_per_page' => 2,
+                'order' => 'DESC'
+            )); ?>
+            <?php if ($loop->have_posts()) : ?>
+                <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                    <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
+                    <div id="main"></div>
+                    <div class="h__proj">
+                        <a href="<?php the_permalink() ?>">
+                            <div class="im">
+                                <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                </div>
+                            </div>
+                            <div class="inf">
+                                <span><?php _e('case study', 'emiel'); ?></span>
+                                <h3><?php the_title(); ?></h3>
+                            </div>
+                        </a>
+                    </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
+        </div>
+</section>
 
 <?php get_footer(); ?>

@@ -455,3 +455,155 @@ nav {
     right: 100%;
   }
 }
+
+$proheight: 610px;
+.proj {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .h__proj {
+    width: 100%;
+    height: $proheight;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0px;
+      background: #ffffff;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0px;
+      background: $color;
+      width: 0%;
+      height: 100%;
+      z-index: 5;
+    }
+    .inf {
+      position: absolute;
+      bottom: 40px;
+      z-index: 4;
+      h3 {
+        font-family: $SilkaBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 52px;
+        color: #ffffff;
+      }
+      span {
+        font-family: $SilkaMedium;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+    }
+    .im {
+      width: 100%;
+      min-height: $proheight;
+      overflow: hidden;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      .im_g {
+        width: 100%;
+        min-height: 610px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(1);
+        background-size: cover;
+        &:before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+.h__vi {
+  &:before {
+    -webkit-animation: vi;
+    -moz-animation: vi;
+    animation: vi;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+  }
+  &:after {
+    -webkit-animation: vix;
+    -moz-animation: vix;
+    animation: vix;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+  }
+  .im {
+    .im_g {
+      -webkit-animation: vimg;
+      -moz-animation: vimg;
+      animation: vimg;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 30s;
+      -moz-animation-duration: 30s;
+      animation-duration: 30s;
+    }
+  }
+}
+
+@keyframes vi {
+  0% {
+    width: 100%;
+    right: 0%;
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  }
+}
+
+@keyframes vix {
+  0% {
+    width: 0%;
+    right: 0%;
+  }
+  50% {
+    width: 100%;
+    right: 0%;
+  }
+  100% {
+    width: 00%;
+    right: 100%;
+  }
+}
+
+@keyframes vimg {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
