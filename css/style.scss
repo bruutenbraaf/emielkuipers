@@ -619,4 +619,18 @@ $proheight: 610px;
   .proj .h__proj .im .im_g {
     min-height: 288px;
   }
+  .in_h .int span p {
+    font-size: 38px;
+    line-height: 56px;
+    b {
+      font-size: 38px;
+      line-height: 56px;
+      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      -moz-text-stroke-color: $color;
+      -webkit-text-stroke-color: $color;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
 }
