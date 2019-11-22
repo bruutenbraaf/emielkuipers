@@ -27,6 +27,7 @@
   left: 0;
   z-index: 9999;
   color: #ffffff;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -123,7 +124,8 @@
     opacity: 1;
     top: 0; } }
 .ready {
-  pointer-events: none; }
+  pointer-events: none;
+  background: none; }
   .ready .in span {
     opacity: 1;
     -webkit-animation: fadeOut;
@@ -266,5 +268,143 @@ nav .row {
           font-size: 16px;
           line-height: 42px;
           color: #3c3750; }
+
+.int {
+  padding-top: 130px; }
+  .int span {
+    display: block;
+    overflow: hidden; }
+    .int span p {
+      font-size: 52px;
+      color: #3c3750;
+      font-weight: 700;
+      position: relative;
+      top: 80px;
+      margin: 0px;
+      font-family: "SilkaBold", Arial, sans-serif; }
+      .int span p b {
+        font-family: "SilkaBold", Arial, sans-serif;
+        font-size: 52px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #3c3750;
+        -webkit-text-stroke-color: #3c3750;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px; }
+
+.acv span p {
+  -webkit-animation: slidesIn;
+  -moz-animation: slidesIn;
+  animation: slidesIn;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  animation-delay: 1.3s; }
+
+@keyframes slidesIn {
+  0% {
+    top: 80px; }
+  100% {
+    top: 0px; } }
+.int span:nth-child(1n) p {
+  animation-delay: 0.3s; }
+
+.int span:nth-child(2n) p {
+  animation-delay: 0.6s; }
+
+.int span:nth-child(3n) p {
+  animation-delay: 0.9s; }
+
+.int span:nth-child(4n) p {
+  animation-delay: 1.2s; }
+
+.int span:nth-child(5n) p {
+  animation-delay: 1.5s; }
+
+.int span:nth-child(6n) p {
+  animation-delay: 1.8s; }
+
+.int span:nth-child(7n) p {
+  animation-delay: 2.1s; }
+
+.int span:nth-child(8n) p {
+  animation-delay: 2.4s; }
+
+.int span:nth-child(9n) p {
+  animation-delay: 2.7s; }
+
+.int span:nth-child(10n) p {
+  animation-delay: 3s; }
+
+.int__p {
+  padding-top: 34px; }
+  .int__p p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #3c3750;
+    opacity: 0.75;
+    position: relative; }
+    .int__p p:before {
+      content: "";
+      position: absolute;
+      background: #ffffff;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      z-index: 5; }
+    .int__p p:after {
+      content: "";
+      position: absolute;
+      background: #3c3750;
+      height: 100%;
+      width: 0%;
+      bottom: 0;
+      right: 0%;
+      z-index: 5; }
+
+.int__a p:before {
+  -webkit-animation: sfdsIn;
+  -moz-animation: sfdsIn;
+  animation: sfdsIn;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  animation-delay: 1.4s; }
+.int__a p:after {
+  -webkit-animation: sfdxIn;
+  -moz-animation: sfdxIn;
+  animation: sfdxIn;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  animation-delay: 1s; }
+
+@keyframes sfdsIn {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0%; } }
+@keyframes sfdxIn {
+  0% {
+    width: 0%;
+    right: 0%; }
+  50% {
+    width: 100%;
+    right: 0%; }
+  100% {
+    width: 00%;
+    right: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

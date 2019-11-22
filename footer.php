@@ -3,13 +3,9 @@
     jQuery(document).ready(function() {
         window.setTimeout(function() {
             jQuery('.lxs').addClass('ready');
-        }, <?php the_field('duur_loader', 'option'); ?>);
-    });
-</script>
-<script>
-    jQuery(document).ready(function() {
-        window.setTimeout(function() {
             jQuery('nav').addClass('actv');
+            jQuery('.int').addClass('acv');
+            jQuery('.int__p').addClass('int__a');
         }, <?php the_field('duur_loader', 'option'); ?>);
     });
 </script>
