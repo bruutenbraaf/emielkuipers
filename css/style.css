@@ -548,6 +548,10 @@ nav {
       -moz-text-stroke-color: #3c3750;
       -webkit-text-stroke-color: #3c3750;
       -moz-text-stroke-width: 1px;
-      -webkit-text-stroke-width: 1px; } }
+      -webkit-text-stroke-width: 1px; }
+
+  .int__p p {
+    font-size: 16px;
+    line-height: 28px; } }
 
 /*# sourceMappingURL=style.css.map */
