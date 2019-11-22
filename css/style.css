@@ -369,15 +369,6 @@ nav {
       bottom: 0;
       right: 0;
       z-index: 5; }
-    .int__p p:after {
-      content: "";
-      position: absolute;
-      background: #3c3750;
-      height: 100%;
-      width: 0%;
-      bottom: 0;
-      right: 0%;
-      z-index: 5; }
 
 .int__a p:before {
   -webkit-animation: sfdsIn;
@@ -389,7 +380,7 @@ nav {
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   animation-duration: 0.4s;
-  animation-delay: 1.8s; }
+  animation-delay: 1.4s; }
 .int__a p:after {
   -webkit-animation: sfdxIn;
   -moz-animation: sfdxIn;

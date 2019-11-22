@@ -393,16 +393,16 @@ nav {
       right: 0;
       z-index: 5;
     }
-    &:after {
-      content: "";
-      position: absolute;
-      background: $color;
-      height: 100%;
-      width: 0%;
-      bottom: 0;
-      right: 0%;
-      z-index: 5;
-    }
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   background: $color;
+    //   height: 100%;
+    //   width: 0%;
+    //   bottom: 0;
+    //   right: 0%;
+    //   z-index: 5;
+    // }
   }
 }
 
@@ -418,7 +418,7 @@ nav {
       -webkit-animation-duration: 0.4s;
       -moz-animation-duration: 0.4s;
       animation-duration: 0.4s;
-      animation-delay: 1.8s;
+      animation-delay: 1.4s;
     }
     &:after {
       -webkit-animation: sfdxIn;
