@@ -1,6 +1,11 @@
 // Scrollmagic
 var controller = new ScrollMagic.Controller();
-var tween = TweenMax.to(".h__proj", 1, { className: "+=h__vi" });
-var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
-  .setTween(tween)
-  .addTo(controller)
+var steps = document.querySelectorAll('.h__proj');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'h__vi')
+    .addTo(controller)
+    .reverse(false);
+}

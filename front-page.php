@@ -1,7 +1,7 @@
 <?php
 get_header(); ?>
 
-<div class="lxs">
+<!-- <div class="lxs">
     <div class="in">
         <?php if (have_rows('opsomming_load', 'option')) : ?>
             <?php while (have_rows('opsomming_load', 'option')) : the_row(); ?>
@@ -11,7 +11,7 @@ get_header(); ?>
     </div>
     <div class="ba slidein">
     </div>
-</div>
+</div> -->
 
 <?php if (have_rows('intro')) : ?>
     <?php while (have_rows('intro')) : the_row(); ?>
@@ -47,7 +47,7 @@ get_header(); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                     <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
-                    <div id="main"></div>
+                    <div id="hero-block"></div>
                     <div class="h__proj">
                         <a href="<?php the_permalink() ?>">
                             <div class="im">
