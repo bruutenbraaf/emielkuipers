@@ -3,8 +3,8 @@ get_header(); ?>
 
 <div class="lxp">
     <div class="in">
-        <span>Flying</span>
-        <span>you to: </span>
+        <span>We vliegen</span>
+        <span>je naar: </span>
         <span><?php the_title(); ?></span>
     </div>
     <div class="ba slidein">
