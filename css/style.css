@@ -505,13 +505,6 @@ nav {
   -moz-animation-duration: 30s;
   animation-duration: 30s; }
 
-.h__vi:first-child:before {
-  animation-delay: calc(3000ms + 1000ms); }
-.h__vi:first-child:after {
-  animation-delay: calc(3000ms + 1000ms); }
-.h__vi:first-child .im .im_g {
-  animation-delay: calc(3000ms + 1000ms); }
-
 @keyframes vi {
   0% {
     width: 100%;

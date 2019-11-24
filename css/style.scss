@@ -574,20 +574,6 @@ $proheight: 610px;
   }
 }
 
-.h__vi:first-child {
-  &:before {
-    animation-delay: calc(3000ms + 1000ms);
-  }
-  &:after {
-    animation-delay: calc(3000ms + 1000ms);
-  }
-  .im {
-    .im_g {
-      animation-delay: calc(3000ms + 1000ms);
-    }
-  }
-}
-
 @keyframes vi {
   0% {
     width: 100%;
