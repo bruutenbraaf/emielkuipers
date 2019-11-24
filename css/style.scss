@@ -274,6 +274,7 @@ nav {
   left: 0;
   position: fixed;
   z-index: 55;
+  background: #ffffff;
   .branding {
     position: relative;
     top: -30px;
@@ -573,6 +574,20 @@ $proheight: 610px;
   }
 }
 
+.h__vi:first-child {
+  &:before {
+    animation-delay: calc(3000ms + 1000ms);
+  }
+  &:after {
+    animation-delay: calc(3000ms + 1000ms);
+  }
+  .im {
+    .im_g {
+      animation-delay: calc(3000ms + 1000ms);
+    }
+  }
+}
+
 @keyframes vi {
   0% {
     width: 100%;
@@ -635,9 +650,320 @@ $proheight: 610px;
   }
   .int__p p {
     font-size: 16px;
-    line-height: 28px;;
+    line-height: 28px;
   }
   .proj .h__proj .inf h3 {
     font-size: 24px;
+  }
+}
+
+// Footer
+
+footer {
+  .cntx {
+    span {
+      overflow: hidden;
+      display: block;
+      p {
+        font-family: $SilkaBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 52px;
+        color: $color;
+        position: relative;
+        top: 80px;
+      }
+    }
+  }
+}
+
+.fo-change {
+  .cntx {
+    span {
+      p {
+        -webkit-animation: foch;
+        -moz-animation: foch;
+        animation: foch;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 1s;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  footer {
+    padding-bottom: 66px;
+    .cntx {
+      span:nth-child(#{$i}n) {
+        p {
+          animation-delay: #{$i * 0.1}s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes foch {
+  0% {
+    top: 80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.cntc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  span {
+    display: block;
+  }
+  .s-t {
+    p {
+      padding: 10px 0px;
+      display: block;
+      border-bottom: 1px solid #ffffff;
+      font-family: $SilkaMedium;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #cecece;
+      margin: 0;
+      padding-right: 60px;
+      display: initial;
+      position: relative;
+      transition-duration: 2s;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        background: #cecece;
+        z-index: 8;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 2;
+      }
+    }
+  }
+  a {
+    margin-top: 10px;
+    font-family: $SilkaMedium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: $color;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0px;
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background: $color;
+      z-index: 8;
+      animation-delay: 0.3s;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      z-index: 2;
+      animation-delay: 0.3s;
+    }
+  }
+}
+
+.fo-change {
+  .s-t {
+    p {
+      transition-duration: 2s;
+      border-bottom: 1px solid #cecece;
+      &:after {
+        -webkit-animation: rev;
+        -moz-animation: rev;
+        animation: rev;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.8s;
+        -moz-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+      }
+      &:before {
+        -webkit-animation: rev;
+        -moz-animation: rev;
+        animation: rev;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.8s;
+        -moz-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+      }
+    }
+    a {
+      &:after {
+        -webkit-animation: rev;
+        -moz-animation: rev;
+        animation: rev;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.8s;
+        -moz-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        animation-delay: 0.3s;
+      }
+      &:before {
+        -webkit-animation: rev;
+        -moz-animation: rev;
+        animation: rev;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.8s;
+        -moz-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        animation-delay: 0.3s;
+      }
+    }
+  }
+}
+
+@keyframes rev {
+  0% {
+    right: 0;
+  }
+  50% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+footer {
+  .soc {
+    a {
+      font-family: $SilkaMedium;
+      font-size: 16px;
+      color: $color;
+      margin-left: 60px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        background: $color;
+        z-index: 8;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.fo-change {
+  .soc {
+    a {
+      &:after {
+        -webkit-animation: revxx;
+        -moz-animation: revxx;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 1.1s;
+        -moz-animation-duration: 1.1s;
+        animation-duration: 1.1s;
+      }
+      &:before {
+        -webkit-animation: revx;
+        -moz-animation: revx;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.8s;
+        -moz-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+      }
+    }
+  }
+}
+
+@keyframes revx {
+  0% {
+    top: 0;
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+
+@keyframes revxx {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+
+@for $i from 1 through 10 {
+  footer {
+    padding-bottom: 66px;
+    .soc {
+      a:nth-child(#{$i}n) {
+        &:before {
+          animation-delay: #{$i * 0.3}s;
+        }
+        &:after {
+          animation-delay: #{$i * 0.3}s;
+        }
+      }
+    }
   }
 }

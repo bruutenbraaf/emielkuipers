@@ -250,7 +250,8 @@ nav {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 55; }
+  z-index: 55;
+  background: #ffffff; }
   nav .branding {
     position: relative;
     top: -30px;
@@ -504,6 +505,13 @@ nav {
   -moz-animation-duration: 30s;
   animation-duration: 30s; }
 
+.h__vi:first-child:before {
+  animation-delay: calc(3000ms + 1000ms); }
+.h__vi:first-child:after {
+  animation-delay: calc(3000ms + 1000ms); }
+.h__vi:first-child .im .im_g {
+  animation-delay: calc(3000ms + 1000ms); }
+
 @keyframes vi {
   0% {
     width: 100%;
@@ -556,5 +564,337 @@ nav {
 
   .proj .h__proj .inf h3 {
     font-size: 24px; } }
+footer .cntx span {
+  overflow: hidden;
+  display: block; }
+  footer .cntx span p {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 52px;
+    color: #3c3750;
+    position: relative;
+    top: 80px; }
+
+.fo-change .cntx span p {
+  -webkit-animation: foch;
+  -moz-animation: foch;
+  animation: foch;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(1n) p {
+    animation-delay: 0.1s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(2n) p {
+    animation-delay: 0.2s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(3n) p {
+    animation-delay: 0.3s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(4n) p {
+    animation-delay: 0.4s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(5n) p {
+    animation-delay: 0.5s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(6n) p {
+    animation-delay: 0.6s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(7n) p {
+    animation-delay: 0.7s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(8n) p {
+    animation-delay: 0.8s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(9n) p {
+    animation-delay: 0.9s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .cntx span:nth-child(10n) p {
+    animation-delay: 1s; }
+
+@keyframes foch {
+  0% {
+    top: 80px; }
+  100% {
+    top: 0px; } }
+.cntc {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .cntc span {
+    display: block; }
+  .cntc .s-t p {
+    padding: 10px 0px;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    font-family: "SilkaMedium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #cecece;
+    margin: 0;
+    padding-right: 60px;
+    display: initial;
+    position: relative;
+    transition-duration: 2s; }
+    .cntc .s-t p:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background: #cecece;
+      z-index: 8; }
+    .cntc .s-t p:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      z-index: 2; }
+  .cntc a {
+    margin-top: 10px;
+    font-family: "SilkaMedium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3c3750;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0px; }
+    .cntc a:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background: #3c3750;
+      z-index: 8;
+      animation-delay: 0.3s; }
+    .cntc a:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      z-index: 2;
+      animation-delay: 0.3s; }
+
+.fo-change .s-t p {
+  transition-duration: 2s;
+  border-bottom: 1px solid #cecece; }
+  .fo-change .s-t p:after {
+    -webkit-animation: rev;
+    -moz-animation: rev;
+    animation: rev;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    animation-duration: 0.8s; }
+  .fo-change .s-t p:before {
+    -webkit-animation: rev;
+    -moz-animation: rev;
+    animation: rev;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    animation-duration: 0.8s; }
+.fo-change .s-t a:after {
+  -webkit-animation: rev;
+  -moz-animation: rev;
+  animation: rev;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s; }
+.fo-change .s-t a:before {
+  -webkit-animation: rev;
+  -moz-animation: rev;
+  animation: rev;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s; }
+
+@keyframes rev {
+  0% {
+    right: 0; }
+  50% {
+    width: 100%;
+    right: 0; }
+  100% {
+    width: 0;
+    right: 100%; } }
+footer .soc a {
+  font-family: "SilkaMedium", Arial, sans-serif;
+  font-size: 16px;
+  color: #3c3750;
+  margin-left: 60px;
+  position: relative; }
+  footer .soc a:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: #3c3750;
+    z-index: 8; }
+  footer .soc a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 2; }
+
+.fo-change .soc a:after {
+  -webkit-animation: revxx;
+  -moz-animation: revxx;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.1s;
+  -moz-animation-duration: 1.1s;
+  animation-duration: 1.1s; }
+.fo-change .soc a:before {
+  -webkit-animation: revx;
+  -moz-animation: revx;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+
+@keyframes revx {
+  0% {
+    top: 0;
+    height: 0%; }
+  50% {
+    height: 100%;
+    top: 0; }
+  100% {
+    height: 0;
+    top: 100%; } }
+@keyframes revxx {
+  0% {
+    height: 100%;
+    top: 0; }
+  100% {
+    height: 0;
+    top: 100%; } }
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(1n):before {
+    animation-delay: 0.3s; }
+  footer .soc a:nth-child(1n):after {
+    animation-delay: 0.3s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(2n):before {
+    animation-delay: 0.6s; }
+  footer .soc a:nth-child(2n):after {
+    animation-delay: 0.6s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(3n):before {
+    animation-delay: 0.9s; }
+  footer .soc a:nth-child(3n):after {
+    animation-delay: 0.9s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(4n):before {
+    animation-delay: 1.2s; }
+  footer .soc a:nth-child(4n):after {
+    animation-delay: 1.2s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(5n):before {
+    animation-delay: 1.5s; }
+  footer .soc a:nth-child(5n):after {
+    animation-delay: 1.5s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(6n):before {
+    animation-delay: 1.8s; }
+  footer .soc a:nth-child(6n):after {
+    animation-delay: 1.8s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(7n):before {
+    animation-delay: 2.1s; }
+  footer .soc a:nth-child(7n):after {
+    animation-delay: 2.1s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(8n):before {
+    animation-delay: 2.4s; }
+  footer .soc a:nth-child(8n):after {
+    animation-delay: 2.4s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(9n):before {
+    animation-delay: 2.7s; }
+  footer .soc a:nth-child(9n):after {
+    animation-delay: 2.7s; }
+
+footer {
+  padding-bottom: 66px; }
+  footer .soc a:nth-child(10n):before {
+    animation-delay: 3s; }
+  footer .soc a:nth-child(10n):after {
+    animation-delay: 3s; }
 
 /*# sourceMappingURL=style.css.map */

@@ -47,8 +47,7 @@ get_header(); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                     <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
-                    <div id="hero-block"></div>
-                    <div class="h__proj">
+                    <div class="h__proj offset-md-1 col-md-10">
                         <a href="<?php the_permalink() ?>">
                             <div class="im">
                                 <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">

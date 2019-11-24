@@ -9,6 +9,7 @@
     <title><?php wp_title('&raquo;', 'true', 'right'); ?><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
+</style>
 
 <body <?php body_class(); ?>>
     <nav>

@@ -29,6 +29,7 @@ function flexupdate_scripts()
 	wp_enqueue_style('bootcss', get_template_directory_uri() . '/css/bootstrap.min.css');
 	wp_enqueue_style('niceselectcss', get_template_directory_uri() . '/css/nice-select.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('dynamic', get_template_directory_uri() . '/template-parts/dynamic-css.php');
 	wp_enqueue_style('fa', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 }
 add_action('wp_enqueue_scripts', 'flexupdate_scripts');

@@ -7,6 +7,13 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'h__vi')
     .addTo(controller)
-    .offset(-200)
-    .reverse(false);
+    .offset(-250)
+    .reverse(false)
 }
+
+var tween = TweenMax.to("footer", 1, { className: "fo-change" });
+var scene = new ScrollMagic.Scene({ triggerElement: "#fo" })
+  .setTween(tween)
+  .addTo(controller)
+  .offset(-300)
+  .reverse(false)
