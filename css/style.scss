@@ -967,3 +967,266 @@ footer {
     }
   }
 }
+
+.lxss {
+  position: fixed;
+  z-index: 8888;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  pointer-events: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  .in {
+    position: relative;
+    z-index: 99;
+    span {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0;
+      position: relative;
+      color: #ffffff;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+    }
+  }
+  .br {
+    width: $barWidth;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #111111;
+    z-index: 2;
+    z-index: 1;
+    height: 0vh;
+    transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    &:before {
+      content: "";
+      width: $barWidth;
+      left: $barWidth;
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      z-index: 1;
+      height: 0vh;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+    }
+    &:after {
+      content: "";
+      width: $barWidth;
+      left: calc(#{$barWidth}* 2);
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      z-index: 1;
+      height: 0vh;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-delay: 0.8s;
+    }
+  }
+}
+
+.load {
+  .in {
+    span {
+      -webkit-animation: fadeInP;
+      -moz-animation: fadeInP;
+      animation: fadeInP;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 1.5s;
+      -moz-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+    }
+  }
+  .br {
+    height: 100vh;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    &:before {
+      height: 100vh;
+      transition-delay: 0.1s;
+      -moz-transition-delay: 0.1s;
+      -o-transition-delay: 0.1s;
+      -webkit-transition-delay: 0.1s;
+    }
+    &:after {
+      height: 100vh;
+      transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      -webkit-transition-delay: 0.2s;
+    }
+  }
+}
+
+@mixin barOut {
+  -webkit-animation: barOut;
+  -moz-animation: barOut;
+  animation: barOut;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.lxp {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  .in {
+    position: relative;
+    z-index: 99;
+    span {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0;
+      position: relative;
+      color: #ffffff;
+      -webkit-animation: fadeInP;
+      -moz-animation: fadeInP;
+      animation: fadeInP;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 3s;
+      -moz-animation-duration: 3s;
+      animation-duration: 3s;
+    }
+  }
+  .ba {
+    width: $barWidth;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #111111;
+    z-index: 2;
+    height: 100vh;
+    @include barOut;
+    animation-delay: 3.1s;
+    &:before {
+      content: "";
+      width: $barWidth;
+      left: $barWidth;
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      height: 100vh;
+      @include barOut;
+      animation-delay: 3.2s;
+    }
+    &:after {
+      content: "";
+      width: $barWidth;
+      height: 100vh;
+      left: calc(#{$barWidth}* 2);
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      @include barOut;
+      animation-delay: 3.3s;
+    }
+  }
+}
+
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+    top: -30px;
+  }
+  20% {
+    opacity: 1;
+    top: 0;
+  }
+  80% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -30px;
+  }
+}
+
+@keyframes fadeOutP {
+  0% {
+    opacity: 0;
+    top: -30px;
+  }
+  20% {
+    opacity: 1;
+    top: 0;
+  }
+  80% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -30px;
+  }
+}
+
+@keyframes barOut {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0vh;
+  }
+}
+
+@for $i from 1 through 10 {
+  .lxp {
+    .in {
+      span:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.3}s;
+      }
+    }
+  }
+}
+
+.lxp {
+  .in {
+    span:nth-child(n+2) {
+      text-transform: lowercase;
+    }
+  }
+}

@@ -63,6 +63,7 @@ get_header(); ?>
                 <?php wp_reset_postdata(); ?>
             <?php endif; ?>
         </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

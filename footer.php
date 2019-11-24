@@ -28,6 +28,14 @@
     </div>
 </footer>
 
+<div class="lxss">
+    <div class="in">
+        <span><?php the_title(); ?></span>
+    </div>
+    <div class="br">
+    </div>
+</div>
+
 <script>
     jQuery(document).ready(function() {
         window.setTimeout(function() {

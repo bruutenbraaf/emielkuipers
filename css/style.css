@@ -897,4 +897,258 @@ footer {
   footer .soc a:nth-child(10n):after {
     animation-delay: 3s; }
 
+.lxss {
+  position: fixed;
+  z-index: 8888;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  pointer-events: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; }
+  .lxss .in {
+    position: relative;
+    z-index: 99; }
+    .lxss .in span {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0;
+      position: relative;
+      color: #ffffff;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s; }
+  .lxss .br {
+    width: 33.3333333vw;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #111111;
+    z-index: 2;
+    z-index: 1;
+    height: 0vh;
+    transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s; }
+    .lxss .br:before {
+      content: "";
+      width: 33.3333333vw;
+      left: 33.3333333vw;
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      z-index: 1;
+      height: 0vh;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s; }
+    .lxss .br:after {
+      content: "";
+      width: 33.3333333vw;
+      left: calc(33.3333333vw* 2);
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      z-index: 1;
+      height: 0vh;
+      transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-delay: 0.8s; }
+
+.load .in span {
+  -webkit-animation: fadeInP;
+  -moz-animation: fadeInP;
+  animation: fadeInP;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+.load .br {
+  height: 100vh;
+  transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s; }
+  .load .br:before {
+    height: 100vh;
+    transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s; }
+  .load .br:after {
+    height: 100vh;
+    transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s; }
+
+.lxp {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; }
+  .lxp .in {
+    position: relative;
+    z-index: 99; }
+    .lxp .in span {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0;
+      position: relative;
+      color: #ffffff;
+      -webkit-animation: fadeInP;
+      -moz-animation: fadeInP;
+      animation: fadeInP;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 3s;
+      -moz-animation-duration: 3s;
+      animation-duration: 3s; }
+  .lxp .ba {
+    width: 33.3333333vw;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #111111;
+    z-index: 2;
+    height: 100vh;
+    -webkit-animation: barOut;
+    -moz-animation: barOut;
+    animation: barOut;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: 3.1s; }
+    .lxp .ba:before {
+      content: "";
+      width: 33.3333333vw;
+      left: 33.3333333vw;
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      height: 100vh;
+      -webkit-animation: barOut;
+      -moz-animation: barOut;
+      animation: barOut;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      animation-duration: 1s;
+      animation-delay: 3.2s; }
+    .lxp .ba:after {
+      content: "";
+      width: 33.3333333vw;
+      height: 100vh;
+      left: calc(33.3333333vw* 2);
+      bottom: 0;
+      position: absolute;
+      background: #111111;
+      z-index: 2;
+      -webkit-animation: barOut;
+      -moz-animation: barOut;
+      animation: barOut;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      animation-duration: 1s;
+      animation-delay: 3.3s; }
+
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+    top: -30px; }
+  20% {
+    opacity: 1;
+    top: 0; }
+  80% {
+    opacity: 1;
+    top: 0; }
+  100% {
+    opacity: 0;
+    top: -30px; } }
+@keyframes fadeOutP {
+  0% {
+    opacity: 0;
+    top: -30px; }
+  20% {
+    opacity: 1;
+    top: 0; }
+  80% {
+    opacity: 1;
+    top: 0; }
+  100% {
+    opacity: 0;
+    top: -30px; } }
+@keyframes barOut {
+  0% {
+    height: 100vh; }
+  100% {
+    height: 0vh; } }
+.lxp .in span:nth-child(1n) {
+  animation-delay: 0.3s; }
+
+.lxp .in span:nth-child(2n) {
+  animation-delay: 0.6s; }
+
+.lxp .in span:nth-child(3n) {
+  animation-delay: 0.9s; }
+
+.lxp .in span:nth-child(4n) {
+  animation-delay: 1.2s; }
+
+.lxp .in span:nth-child(5n) {
+  animation-delay: 1.5s; }
+
+.lxp .in span:nth-child(6n) {
+  animation-delay: 1.8s; }
+
+.lxp .in span:nth-child(7n) {
+  animation-delay: 2.1s; }
+
+.lxp .in span:nth-child(8n) {
+  animation-delay: 2.4s; }
+
+.lxp .in span:nth-child(9n) {
+  animation-delay: 2.7s; }
+
+.lxp .in span:nth-child(10n) {
+  animation-delay: 3s; }
+
+.lxp .in span:nth-child(n+2) {
+  text-transform: lowercase; }
+
 /*# sourceMappingURL=style.css.map */

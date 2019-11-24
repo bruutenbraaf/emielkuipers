@@ -17,3 +17,15 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#fo" })
   .addTo(controller)
   .offset(-300)
   .reverse(false)
+
+
+jQuery('a').click(function (e) {
+  e.preventDefault();                   // prevent default anchor behavior
+  var goTo = this.getAttribute("href"); // store anchor href
+
+  jQuery('.lxss').addClass('load');
+
+  setTimeout(function () {
+    window.location = goTo;
+  }, 1500);                             // time in ms
+}); 
