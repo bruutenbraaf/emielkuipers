@@ -65,5 +65,14 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
+<script>
+    jQuery(document).ready(function() {
+        window.setTimeout(function() {
+            jQuery('.lxs').addClass('ready');
+            jQuery('nav').addClass('actv');
+            jQuery('.int').addClass('acv');
+            jQuery('.int__p').addClass('int__a');
+        }, <?php the_field('duur_loader', 'option'); ?>);
+    });
+</script>
 <?php get_footer(); ?>

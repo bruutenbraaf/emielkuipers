@@ -27,5 +27,5 @@ jQuery('a').click(function (e) {
 
   setTimeout(function () {
     window.location = goTo;
-  }, 1500);                             // time in ms
+  }, 800);                             // time in ms
 }); 
