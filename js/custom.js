@@ -8,6 +8,7 @@ for (var step of steps) {
     .setClassToggle(step, 'h__vi')
     .addTo(controller)
     .reverse(false)
+    .offset(-320)
 }
 
 var controller = new ScrollMagic.Controller();
@@ -18,7 +19,7 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'h__vi_p')
     .addTo(controller)
-    .offset(-50)
+    .offset(-300)
     .reverse(false)
 }
 
@@ -26,7 +27,7 @@ var tween = TweenMax.to("footer", 1, { className: "fo-change" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#fo" })
   .setTween(tween)
   .addTo(controller)
-  .offset(-100)
+  .offset(-300)
   .reverse(false)
 
 var controller = new ScrollMagic.Controller();
@@ -37,7 +38,7 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'th_img_vi')
     .addTo(controller)
-    .offset(-50)
+    .offset(-300)
     .reverse(false)
 }
 
@@ -50,6 +51,7 @@ for (var step of steps) {
     .setClassToggle(step, 'p_s')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 
@@ -62,6 +64,7 @@ for (var step of steps) {
     .setClassToggle(step, 'cv_hb_s')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 var controller = new ScrollMagic.Controller();
@@ -73,6 +76,7 @@ for (var step of steps) {
     .setClassToggle(step, 'cv_p_s')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 var controller = new ScrollMagic.Controller();
@@ -84,6 +88,7 @@ for (var step of steps) {
     .setClassToggle(step, 'is_v')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 var controller = new ScrollMagic.Controller();
@@ -95,6 +100,7 @@ for (var step of steps) {
     .setClassToggle(step, 'carrousel_v')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 
@@ -107,6 +113,7 @@ for (var step of steps) {
     .setClassToggle(step, 'is_v')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 var controller = new ScrollMagic.Controller();
@@ -118,28 +125,43 @@ for (var step of steps) {
     .setClassToggle(step, 'is_v')
     .addTo(controller)
     .reverse(false)
+    .offset(-300)
 }
 
 jQuery('.h__proj').each(function () {
-  var tween = TweenMax.to(jQuery('.im_g', this), 3, { className: "+=im_ga" });
-  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+  var tween = TweenMax.to(jQuery('.im_g', this), 5, { className: "+=im_ga" });
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "200%" })
     .setTween(tween)
     .addTo(controller)
+    .offset(-200)
 });
+
+jQuery('.f_img').each(function () {
+  var tween = TweenMax.to(jQuery('.th_img', this), 5, { className: "+=imgv" });
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "200%" })
+    .setTween(tween)
+    .addTo(controller)
+    .offset(-300)
+    .addIndicators();
+});
+
 
 jQuery('.h__proj_p').each(function () {
   var tween = TweenMax.to(jQuery('.im_g', this), 3, { className: "+=im_ga" });
-  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "200%" })
     .setTween(tween)
     .addTo(controller)
+    .offset(-300)
 });
 
 
 jQuery('.slide').each(function () {
   var tween = TweenMax.to(jQuery('.img', this), 2, { className: "imgb" });
-  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "200%" })
     .setTween(tween)
     .addTo(controller)
+    .offset(-320)
+    .addIndicators()
 });
 
 // Delay next page  

@@ -1155,13 +1155,19 @@ footer {
 
 .f_img {
   margin: 65px;
+  max-width: 100%;
+  height: 610px;
+  position: relative;
+  overflow: hidden;
   .th_img {
     width: 100%;
-    min-height: $proheight;
+    height: calc(100% + 100px);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
     overflow: hidden;
-    position: relative;
     left: 0px;
-    top: 0px;
+    background-size: cover;
     &:before {
       content: "";
       height: 100%;
@@ -1181,6 +1187,10 @@ footer {
       background: #ffffff;
     }
   }
+}
+
+.imgv {
+  bottom:0px !important;
 }
 
 .th_img_vi {
