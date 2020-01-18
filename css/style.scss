@@ -79,6 +79,10 @@ $barWidth: 33.3333333vw;
   animation-duration: 1s;
 }
 
+p a {
+  color: $color;
+}
+
 .lxs {
   position: fixed;
   width: 100vw;

@@ -22,6 +22,9 @@
 .container {
   max-width: 90vw; }
 
+p a {
+  color: #313131; }
+
 .lxs {
   position: fixed;
   width: 100vw;
