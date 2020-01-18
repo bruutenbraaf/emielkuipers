@@ -1,36 +1,11 @@
-@font-face {
-  font-family: "SilkaRegular";
-  src: url("../fonts/silka/silka-regular-webfont.eot");
-  src: url("../fonts/silka/silka-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/silka/silka-regular-webfont.woff") format("woff"),
-    url("../fonts/silka/silka-regular-webfont.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "SilkaMedium";
-  src: url("../fonts/silka/silka-medium-webfont.eot");
-  src: url("../fonts/silka/silka-medium-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/silka/silka-medium-webfont.woff") format("woff"),
-    url("../fonts/silka/silka-medium-webfont.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "SilkaBold";
-  src: url("../fonts/silka/silka-bold-webfont.eot");
-  src: url("../fonts/silka/silka-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/silka/silka-bold-webfont.woff") format("woff"),
-    url("../fonts/silka/silka-bold-webfont.ttf") format("truetype");
-}
+@import url("https://use.typekit.net/lnq3jmc.css");
 
 // Fonts
 
-$SilkaRegular: "SilkaRegular", Arial, sans-serif;
-$SilkaMedium: "SilkaMedium", Arial, sans-serif;
-$SilkaBold: "SilkaBold", Arial, sans-serif;
-
+$proxima: "proxima-nova", sans-serif;
 // Colors
 
-$color: #3C3750;
+$color: #3c3750;
 
 // Nav height
 
@@ -46,7 +21,7 @@ $FullImgHeight: 80vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $SilkaRegular;
+  font-family: $proxima;
   font-size: 16px;
 }
 
@@ -347,6 +322,7 @@ nav {
             font-size: 16px;
             line-height: 42px;
             color: $color;
+            font-weight: 500;
           }
         }
       }
@@ -379,9 +355,10 @@ nav {
         position: relative;
         top: 80px;
         margin: 0px;
-        font-family: $SilkaBold;
+        font-family: $proxima;
         b {
-          font-family: $SilkaBold;
+          font-family: $proxima;
+          font-weight: 700;
           font-size: 52px;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
@@ -551,16 +528,17 @@ $proheight: 610px;
       bottom: 40px;
       z-index: 4;
       h3 {
-        font-family: $SilkaBold;
+        font-family: $proxima;
+        font-weight: 700;
         font-style: normal;
-        font-weight: bold;
         font-size: 34px;
         line-height: 52px;
         color: #ffffff;
         position: relative;
       }
       span {
-        font-family: $SilkaMedium;
+        font-family: $proxima;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #ffffff;
@@ -645,9 +623,9 @@ footer {
       overflow: hidden;
       display: block;
       p {
-        font-family: $SilkaBold;
+        font-family: $proxima;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 46px;
         line-height: 52px;
         color: $color;
@@ -709,7 +687,8 @@ footer {
       padding: 10px 0px;
       display: block;
       border-bottom: 1px solid #ffffff;
-      font-family: $SilkaMedium;
+      font-family: $proxima;
+      font-weight: 700;
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
@@ -743,9 +722,9 @@ footer {
   }
   a {
     margin-top: 10px;
-    font-family: $SilkaMedium;
+    font-family: $proxima;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     color: $color;
     position: relative;
@@ -850,7 +829,8 @@ footer {
 footer {
   .soc {
     a {
-      font-family: $SilkaMedium;
+      font-family: $proxima;
+      font-weight: 700;
       font-size: 16px;
       color: $color;
       margin-left: 60px;
@@ -1194,7 +1174,7 @@ footer {
 }
 
 .imgv {
-  bottom:0px !important;
+  bottom: 0px !important;
 }
 
 .th_img_vi {
@@ -1295,10 +1275,10 @@ footer {
 .cv {
   margin-bottom: 80px;
   h3 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 46px;
     color: $color;
-    font-family: $SilkaBold;
+    font-family: $proxima;
     position: relative;
     &:before {
       content: "";
@@ -1323,7 +1303,8 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: $color;
-    font-family: $SilkaBold;
+    font-family: $proxima;
+    font-weight: 700;
   }
   p {
     font-size: 16px;
@@ -1463,7 +1444,8 @@ footer {
     h4 {
       font-size: 16px;
       color: $color;
-      font-family: $SilkaBold;
+      font-family: $proxima;
+      font-weight: 700;
       position: relative;
       &:before {
         content: "";
@@ -1595,7 +1577,8 @@ $proheight: 610px;
 .proj_p {
   padding-bottom: 60px;
   h2 {
-    font-family: $SilkaBold;
+    font-family: $proxima;
+    font-weight: 700;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -1641,15 +1624,16 @@ $proheight: 610px;
       bottom: 40px;
       z-index: 4;
       h3 {
-        font-family: $SilkaBold;
+        font-family: $proxima;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 34px;
         line-height: 52px;
         color: #ffffff;
       }
       span {
-        font-family: $SilkaMedium;
+        font-family: $proxima;
+        font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #ffffff;
@@ -1710,7 +1694,8 @@ $proheight: 610px;
 
 .fwc {
   h2 {
-    font-family: $SilkaBold;
+    font-family: $proxima;
+    font-weight: 700;
     font-size: 46px;
     color: $color;
     position: relative;

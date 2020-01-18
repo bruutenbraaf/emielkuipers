@@ -1,29 +1,18 @@
-@font-face {
-  font-family: "SilkaRegular";
-  src: url("../fonts/silka/silka-regular-webfont.eot");
-  src: url("../fonts/silka/silka-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/silka/silka-regular-webfont.woff") format("woff"), url("../fonts/silka/silka-regular-webfont.ttf") format("truetype"); }
-@font-face {
-  font-family: "SilkaMedium";
-  src: url("../fonts/silka/silka-medium-webfont.eot");
-  src: url("../fonts/silka/silka-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/silka/silka-medium-webfont.woff") format("woff"), url("../fonts/silka/silka-medium-webfont.ttf") format("truetype"); }
-@font-face {
-  font-family: "SilkaBold";
-  src: url("../fonts/silka/silka-bold-webfont.eot");
-  src: url("../fonts/silka/silka-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/silka/silka-bold-webfont.woff") format("woff"), url("../fonts/silka/silka-bold-webfont.ttf") format("truetype"); }
+@import url("https://use.typekit.net/lnq3jmc.css");
 * {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "SilkaRegular", Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px; }
 
 .container {
   max-width: 90vw; }
 
 p a {
-  color: #3C3750; }
+  color: #3c3750; }
 
 .lxs {
   position: fixed;
@@ -321,7 +310,8 @@ nav {
           nav .row .main_nav ul li a {
             font-size: 16px;
             line-height: 42px;
-            color: #3C3750; }
+            color: #3c3750;
+            font-weight: 500; }
 
 .nav-up {
   top: -120px;
@@ -340,19 +330,20 @@ nav {
       overflow: hidden; }
       .in_h .int span p {
         font-size: 52px;
-        color: #3C3750;
+        color: #3c3750;
         font-weight: 700;
         position: relative;
         top: 80px;
         margin: 0px;
-        font-family: "SilkaBold", Arial, sans-serif; }
+        font-family: "proxima-nova", sans-serif; }
         .in_h .int span p b {
-          font-family: "SilkaBold", Arial, sans-serif;
+          font-family: "proxima-nova", sans-serif;
+          font-weight: 700;
           font-size: 52px;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
-          -moz-text-stroke-color: #3C3750;
-          -webkit-text-stroke-color: #3C3750;
+          -moz-text-stroke-color: #3c3750;
+          -webkit-text-stroke-color: #3c3750;
           -moz-text-stroke-width: 2px;
           -webkit-text-stroke-width: 2px; }
 
@@ -410,7 +401,7 @@ nav {
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
-    color: #3C3750;
+    color: #3c3750;
     opacity: 0.75;
     position: relative; }
     .int__p p:before {
@@ -485,7 +476,7 @@ nav {
       position: absolute;
       top: 0;
       right: 0px;
-      background: #3C3750;
+      background: #3c3750;
       width: 0%;
       height: 100%;
       z-index: 5; }
@@ -494,15 +485,16 @@ nav {
       bottom: 40px;
       z-index: 4; }
       .proj .h__proj .inf h3 {
-        font-family: "SilkaBold", Arial, sans-serif;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 700;
         font-style: normal;
-        font-weight: bold;
         font-size: 34px;
         line-height: 52px;
         color: #ffffff;
         position: relative; }
       .proj .h__proj .inf span {
-        font-family: "SilkaMedium", Arial, sans-serif;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #ffffff; }
@@ -561,12 +553,12 @@ footer .cntx span {
   overflow: hidden;
   display: block; }
   footer .cntx span p {
-    font-family: "SilkaBold", Arial, sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 46px;
     line-height: 52px;
-    color: #3C3750;
+    color: #3c3750;
     position: relative;
     top: 80px; }
 
@@ -645,7 +637,8 @@ footer {
     padding: 10px 0px;
     display: block;
     border-bottom: 1px solid #ffffff;
-    font-family: "SilkaMedium", Arial, sans-serif;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -675,11 +668,11 @@ footer {
       z-index: 2; }
   .cntc a {
     margin-top: 10px;
-    font-family: "SilkaMedium", Arial, sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
-    color: #3C3750;
+    color: #3c3750;
     position: relative;
     display: inline-block;
     padding: 10px 0px; }
@@ -690,7 +683,7 @@ footer {
       top: 0;
       width: 0%;
       height: 100%;
-      background: #3C3750;
+      background: #3c3750;
       z-index: 8;
       animation-delay: 0.3s; }
     .cntc a:after {
@@ -760,9 +753,10 @@ footer {
     width: 0;
     right: 100%; } }
 footer .soc a {
-  font-family: "SilkaMedium", Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  color: #3C3750;
+  color: #3c3750;
   margin-left: 60px;
   position: relative; }
   footer .soc a:before {
@@ -772,7 +766,7 @@ footer .soc a {
     top: 0;
     width: 100%;
     height: 0%;
-    background: #3C3750;
+    background: #3c3750;
     z-index: 8; }
   footer .soc a:after {
     content: "";
@@ -1117,7 +1111,7 @@ footer {
       position: absolute;
       right: 0;
       top: 0;
-      background: #3C3750; }
+      background: #3c3750; }
     .f_img .th_img:after {
       content: "";
       height: 100%;
@@ -1181,7 +1175,7 @@ footer {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    color: #3C3750;
+    color: #3c3750;
     opacity: 0.75;
     position: relative; }
     .f_p p:before {
@@ -1201,16 +1195,16 @@ footer {
 .cv {
   margin-bottom: 80px; }
   .cv h3 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 46px;
-    color: #3C3750;
-    font-family: "SilkaBold", Arial, sans-serif;
+    color: #3c3750;
+    font-family: "proxima-nova", sans-serif;
     position: relative; }
     .cv h3:before {
       content: "";
       width: 0%;
       height: 100%;
-      background: #3C3750;
+      background: #3c3750;
       position: absolute;
       z-index: 2; }
     .cv h3:after {
@@ -1225,12 +1219,13 @@ footer {
   .cv h4 {
     font-size: 16px;
     line-height: 24px;
-    color: #3C3750;
-    font-family: "SilkaBold", Arial, sans-serif; }
+    color: #3c3750;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700; }
   .cv p {
     font-size: 16px;
     line-height: 24px;
-    color: #3C3750;
+    color: #3c3750;
     opacity: 0.75; }
   .cv .item {
     position: relative; }
@@ -1335,8 +1330,9 @@ footer {
   padding-top: 34px; }
   .in_h .inf h4 {
     font-size: 16px;
-    color: #3C3750;
-    font-family: "SilkaBold", Arial, sans-serif;
+    color: #3c3750;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
     position: relative; }
     .in_h .inf h4:before {
       content: "";
@@ -1401,7 +1397,7 @@ footer {
       transform: translateY(-50%);
       width: 56px;
       height: 56px;
-      background: #3C3750;
+      background: #3c3750;
       z-index: 3;
       display: flex;
       justify-content: center;
@@ -1447,7 +1443,8 @@ footer {
 .proj_p {
   padding-bottom: 60px; }
   .proj_p h2 {
-    font-family: "SilkaBold", Arial, sans-serif;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
     margin-bottom: 20px;
     position: relative;
     display: inline-block; }
@@ -1480,7 +1477,7 @@ footer {
       position: absolute;
       top: 0;
       right: 0px;
-      background: #3C3750;
+      background: #3c3750;
       width: 0%;
       height: 100%;
       z-index: 5; }
@@ -1489,14 +1486,15 @@ footer {
       bottom: 40px;
       z-index: 4; }
       .proj_p .h__proj_p .inf h3 {
-        font-family: "SilkaBold", Arial, sans-serif;
+        font-family: "proxima-nova", sans-serif;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 34px;
         line-height: 52px;
         color: #ffffff; }
       .proj_p .h__proj_p .inf span {
-        font-family: "SilkaMedium", Arial, sans-serif;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #ffffff; }
@@ -1546,9 +1544,10 @@ footer {
   animation-duration: 1s; }
 
 .fwc h2 {
-  font-family: "SilkaBold", Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
   font-size: 46px;
-  color: #3C3750;
+  color: #3c3750;
   position: relative;
   display: inline; }
   .fwc h2:before {
@@ -1585,8 +1584,8 @@ footer {
       line-height: 46px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-color: #3C3750;
-      -webkit-text-stroke-color: #3C3750;
+      -moz-text-stroke-color: #3c3750;
+      -webkit-text-stroke-color: #3c3750;
       -moz-text-stroke-width: 1px;
       -webkit-text-stroke-width: 1px; }
 
