@@ -133,7 +133,6 @@ jQuery('.h__proj').each(function (){
     .setTween(tween)
     .addTo(controller)
     .offset(-150)
-    .addIndicators();
 });
 
 // Delay next page  
