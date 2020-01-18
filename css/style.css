@@ -344,8 +344,8 @@ nav {
           -webkit-text-fill-color: transparent;
           -moz-text-stroke-color: #3c3750;
           -webkit-text-stroke-color: #3c3750;
-          -moz-text-stroke-width: 2px;
-          -webkit-text-stroke-width: 2px; }
+          -moz-text-stroke-width: 1px;
+          -webkit-text-stroke-width: 1px; }
 
 .acv span p {
   -webkit-animation: slidesIn;
@@ -670,7 +670,7 @@ footer {
     margin-top: 10px;
     font-family: "proxima-nova", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     color: #3c3750;
     position: relative;
@@ -1333,7 +1333,8 @@ footer {
     color: #3c3750;
     font-family: "proxima-nova", sans-serif;
     font-weight: 700;
-    position: relative; }
+    position: relative;
+    line-height: 64px; }
     .in_h .inf h4:before {
       content: "";
       top: 0;
