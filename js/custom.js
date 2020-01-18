@@ -18,7 +18,7 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'h__vi_p')
     .addTo(controller)
-    .offset(-150)
+    .offset(-50)
     .reverse(false)
 }
 
@@ -26,7 +26,7 @@ var tween = TweenMax.to("footer", 1, { className: "fo-change" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#fo" })
   .setTween(tween)
   .addTo(controller)
-  .offset(-200)
+  .offset(-100)
   .reverse(false)
 
 var controller = new ScrollMagic.Controller();
@@ -37,7 +37,7 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'th_img_vi')
     .addTo(controller)
-    .offset(-150)
+    .offset(-50)
     .reverse(false)
 }
 
@@ -49,7 +49,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'p_s')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -62,7 +61,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'cv_hb_s')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -74,7 +72,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'cv_p_s')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -86,7 +83,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'is_v')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -98,7 +94,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'carrousel_v')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -111,7 +106,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'is_v')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -123,7 +117,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'is_v')
     .addTo(controller)
-    .offset(-150)
     .reverse(false)
 }
 
@@ -132,7 +125,6 @@ jQuery('.h__proj').each(function (){
   var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
     .setTween(tween)
     .addTo(controller)
-    .offset(-150)
 });
 
 // Delay next page  
