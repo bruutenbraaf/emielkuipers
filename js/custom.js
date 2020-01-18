@@ -7,7 +7,6 @@ for (var step of steps) {
   })
     .setClassToggle(step, 'h__vi')
     .addTo(controller)
-    .offset(-250)
     .reverse(false)
 }
 
@@ -128,7 +127,14 @@ for (var step of steps) {
     .reverse(false)
 }
 
-
+jQuery('.h__proj').each(function (){
+  var tween = TweenMax.to(jQuery('.im_g',this), 3, { className: "+=im_ga" });
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+    .setTween(tween)
+    .addTo(controller)
+    .offset(-150)
+    .addIndicators();
+});
 
 // Delay next page  
 
@@ -163,35 +169,35 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = jQuery('nav').outerHeight();
 
-jQuery(window).scroll(function(event){
-    didScroll = true;
+jQuery(window).scroll(function (event) {
+  didScroll = true;
 });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
 }, 250);
 
 function hasScrolled() {
-    var st = jQuery(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        jQuery('nav').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + jQuery(window).height() < jQuery(document).height()) {
-            jQuery('nav').removeClass('nav-up').addClass('nav-down');
-        }
+  var st = jQuery(this).scrollTop();
+
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta)
+    return;
+
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    jQuery('nav').removeClass('nav-down').addClass('nav-up');
+  } else {
+    // Scroll Up
+    if (st + jQuery(window).height() < jQuery(document).height()) {
+      jQuery('nav').removeClass('nav-up').addClass('nav-down');
     }
-    
-    lastScrollTop = st;
+  }
+
+  lastScrollTop = st;
 }

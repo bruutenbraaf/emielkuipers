@@ -510,22 +510,6 @@ nav {
       position: absolute;
       left: 0px;
       top: 0px; }
-      .proj .h__proj .im .im_g {
-        width: 100%;
-        min-height: 610px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: scale(1);
-        background-size: cover; }
-        .proj .h__proj .im .im_g:before {
-          content: "";
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
-          background: rgba(0, 0, 0, 0.2); }
 
 .h__vi:before {
   -webkit-animation: vi;
@@ -547,16 +531,6 @@ nav {
   -webkit-animation-duration: 0.8s;
   -moz-animation-duration: 0.8s;
   animation-duration: 0.8s; }
-.h__vi .im .im_g {
-  -webkit-animation: vimg;
-  -moz-animation: vimg;
-  animation: vimg;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 30s;
-  -moz-animation-duration: 30s;
-  animation-duration: 30s; }
 
 @keyframes vi {
   0% {
@@ -1518,22 +1492,25 @@ footer {
       position: absolute;
       left: 0px;
       top: 0px; }
-      .proj_p .h__proj_p .im .im_g {
-        width: 100%;
-        min-height: 610px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: scale(1);
-        background-size: cover; }
-        .proj_p .h__proj_p .im .im_g:before {
-          content: "";
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
-          background: rgba(0, 0, 0, 0.2); }
+
+.im_g {
+  width: 100%;
+  min-height: calc(100% + 100px);
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  background-size: cover; }
+  .im_g:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2); }
+
+.im_ga {
+  bottom: 0px; }
 
 .h__vi_p:after {
   -webkit-animation: ref;
