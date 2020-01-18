@@ -175,19 +175,15 @@ jQuery('a').click(function (e) {
   }, 300);                             // time in ms
 });
 
-
 jQuery(document).ready(function () {
   jQuery.cookie('visitor', 'havebeen', { expires: 1, path: '/' });
 });
-
 
 (function ($) {
   if ('havebeen' == jQuery.cookie('visitor')) {
     jQuery('.lxs').addClass('allreadybeen');
   }
 }(jQuery));
-
-
 
 // Hide Header on on scroll down
 var didScroll;
