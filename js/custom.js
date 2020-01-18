@@ -120,16 +120,23 @@ for (var step of steps) {
     .reverse(false)
 }
 
-jQuery('.h__proj').each(function (){
-  var tween = TweenMax.to(jQuery('.im_g',this), 3, { className: "+=im_ga" });
+jQuery('.h__proj').each(function () {
+  var tween = TweenMax.to(jQuery('.im_g', this), 3, { className: "+=im_ga" });
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+    .setTween(tween)
+    .addTo(controller)
+});
+
+jQuery('.h__proj_p').each(function () {
+  var tween = TweenMax.to(jQuery('.im_g', this), 3, { className: "+=im_ga" });
   var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
     .setTween(tween)
     .addTo(controller)
 });
 
 
-jQuery('.slide').each(function (){
-  var tween = TweenMax.to(jQuery('img',this), 3, { className: "+=im_ga" });
+jQuery('.slide').each(function () {
+  var tween = TweenMax.to(jQuery('.img', this), 2, { className: "imgb" });
   var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
     .setTween(tween)
     .addTo(controller)
