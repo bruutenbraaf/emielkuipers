@@ -127,6 +127,14 @@ jQuery('.h__proj').each(function (){
     .addTo(controller)
 });
 
+
+jQuery('.slide').each(function (){
+  var tween = TweenMax.to(jQuery('img',this), 3, { className: "+=im_ga" });
+  var scene = new ScrollMagic.Scene({ triggerElement: this, duration: "110%" })
+    .setTween(tween)
+    .addTo(controller)
+});
+
 // Delay next page  
 
 jQuery('a').click(function (e) {

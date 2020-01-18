@@ -1489,7 +1489,9 @@ footer {
     margin: 0px 15px;
     .img {
       min-width: 100%;
-      min-height: 610px;
+      min-height: 100%;
+      position: absolute;
+      bottom: -100px;
       background-size: cover;
       background-position: center center;
     }
@@ -1666,11 +1668,6 @@ $proheight: 610px;
     background: rgba(0, 0, 0, 0.2);
   }
 }
-
-.im_ga {
-  bottom: 0px;
-}
-
 .h__vi_p {
   &:after {
     -webkit-animation: ref;
@@ -1756,6 +1753,10 @@ $proheight: 610px;
   .proj .h__proj .inf h3 {
     font-size: 24px;
   }
+}
+
+.im_ga {
+  bottom: 0px;
 }
 
 @media (max-width: 768px) {
