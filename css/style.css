@@ -287,7 +287,9 @@ nav {
   left: 0;
   position: fixed;
   z-index: 55;
-  background: #ffffff; }
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); }
   nav .branding {
     position: relative;
     top: -30px;
