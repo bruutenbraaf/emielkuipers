@@ -172,7 +172,7 @@ jQuery('a').click(function (e) {
 
   setTimeout(function () {
     window.location = goTo;
-  }, 200);                             // time in ms
+  }, 250);                             // time in ms
 });
 
 
