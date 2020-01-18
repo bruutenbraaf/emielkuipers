@@ -50,6 +50,10 @@ $FullImgHeight: 80vh;
   font-size: 16px;
 }
 
+.container {
+  max-width: 90vw;
+}
+
 $barWidth: 33.3333333vw;
 @mixin slidein {
   -webkit-animation: slideIn;
