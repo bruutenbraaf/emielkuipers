@@ -11,6 +11,18 @@ for (var step of steps) {
     .reverse(false)
 }
 
+var controller = new ScrollMagic.Controller();
+var steps = document.querySelectorAll('.h__proj_p');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'h__vi_p')
+    .addTo(controller)
+    .offset(-250)
+    .reverse(false)
+}
+
 var tween = TweenMax.to("footer", 1, { className: "fo-change" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#fo" })
   .setTween(tween)
@@ -55,21 +67,8 @@ for (var step of steps) {
     .reverse(false)
 }
 
-
 var controller = new ScrollMagic.Controller();
-var steps = document.querySelectorAll('.cv h4');
-for (var step of steps) {
-  var scene = new ScrollMagic.Scene({
-    triggerElement: step
-  })
-    .setClassToggle(step, 'cv_h_s')
-    .addTo(controller)
-    .offset(-250)
-    .reverse(false)
-}
-
-var controller = new ScrollMagic.Controller();
-var steps = document.querySelectorAll('.cv p');
+var steps = document.querySelectorAll('.cv .item');
 for (var step of steps) {
   var scene = new ScrollMagic.Scene({
     triggerElement: step
@@ -79,6 +78,56 @@ for (var step of steps) {
     .offset(-250)
     .reverse(false)
 }
+
+var controller = new ScrollMagic.Controller();
+var steps = document.querySelectorAll('.fwc h2');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'is_v')
+    .addTo(controller)
+    .offset(-250)
+    .reverse(false)
+}
+
+var controller = new ScrollMagic.Controller();
+var steps = document.querySelectorAll('.carrousel');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'carrousel_v')
+    .addTo(controller)
+    .offset(-250)
+    .reverse(false)
+}
+
+
+var controller = new ScrollMagic.Controller();
+var steps = document.querySelectorAll('.inf h4, .inf span');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'is_v')
+    .addTo(controller)
+    .offset(-250)
+    .reverse(false)
+}
+
+var controller = new ScrollMagic.Controller();
+var steps = document.querySelectorAll('.proj_p h2');
+for (var step of steps) {
+  var scene = new ScrollMagic.Scene({
+    triggerElement: step
+  })
+    .setClassToggle(step, 'is_v')
+    .addTo(controller)
+    .offset(-250)
+    .reverse(false)
+}
+
 
 
 // Delay next page  
@@ -91,5 +140,58 @@ jQuery('a').click(function (e) {
 
   setTimeout(function () {
     window.location = goTo;
-  }, 800);                             // time in ms
-}); 
+  }, 200);                             // time in ms
+});
+
+
+jQuery(document).ready(function () {
+  jQuery.cookie('visitor', 'havebeen', { expires: 1, path: '/' });
+});
+
+
+(function ($) {
+  if ('havebeen' == jQuery.cookie('visitor')) {
+    jQuery('.lxs').addClass('allreadybeen');
+  }
+}(jQuery));
+
+
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = jQuery('nav').outerHeight();
+
+jQuery(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = jQuery(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        jQuery('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + jQuery(window).height() < jQuery(document).height()) {
+            jQuery('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}

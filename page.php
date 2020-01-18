@@ -55,34 +55,38 @@ get_header(); ?>
                     <?php if (have_rows('linke_kant')) : ?>
                         <div class="col-md-3 offset-md-2">
                             <?php while (have_rows('linke_kant')) : the_row(); ?>
-                                <h3><?php the_sub_field('hoofd_titel_bijv_cv_'); ?></h3>
-                                <?php if (have_rows('eigenschap')) : ?>
-                                    <?php while (have_rows('eigenschap')) : the_row(); ?>
-                                        <h4><?php the_sub_field('titel_eigenschao'); ?></h4>
-                                        <?php the_sub_field('omschrijving'); ?>
-                                    <?php endwhile; ?>
-                                <?php endif; ?>
-                                <?php $voeg_knop_toe = get_sub_field('voeg_knop_toe'); ?>
-                                <?php if ($voeg_knop_toe) { ?>
-                                    <a href="<?php echo $voeg_knop_toe['url']; ?>" target="<?php echo $voeg_knop_toe['target']; ?>"><?php echo $voeg_knop_toe['title']; ?></a>
-                                <?php } ?>
+                                <div class="item">
+                                    <h3><?php the_sub_field('hoofd_titel_bijv_cv_'); ?></h3>
+                                    <?php if (have_rows('eigenschap')) : ?>
+                                        <?php while (have_rows('eigenschap')) : the_row(); ?>
+                                            <h4><?php the_sub_field('titel_eigenschao'); ?></h4>
+                                            <?php the_sub_field('omschrijving'); ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                    <?php $voeg_knop_toe = get_sub_field('voeg_knop_toe'); ?>
+                                    <?php if ($voeg_knop_toe) { ?>
+                                        <a href="<?php echo $voeg_knop_toe['url']; ?>" target="<?php echo $voeg_knop_toe['target']; ?>"><?php echo $voeg_knop_toe['title']; ?></a>
+                                    <?php } ?>
+                                </div>
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>
                     <?php if (have_rows('rechte_kant')) : ?>
                         <div class="col-md-3 offset-md-1">
                             <?php while (have_rows('rechte_kant')) : the_row(); ?>
-                                <h3><?php the_sub_field('hoofd_titel_bijv_cv_'); ?></h3>
-                                <?php if (have_rows('eigenschap')) : ?>
-                                    <?php while (have_rows('eigenschap')) : the_row(); ?>
-                                        <h4><?php the_sub_field('titel_eigenschao'); ?></h4>
-                                        <?php the_sub_field('omschrijving'); ?>
-                                    <?php endwhile; ?>
-                                <?php endif; ?>
-                                <?php $voeg_knop_toe = get_sub_field('voeg_knop_toe'); ?>
-                                <?php if ($voeg_knop_toe) { ?>
-                                    <a href="<?php echo $voeg_knop_toe['url']; ?>" target="<?php echo $voeg_knop_toe['target']; ?>"><?php echo $voeg_knop_toe['title']; ?></a>
-                                <?php } ?>
+                                <div class="item">
+                                    <h3><?php the_sub_field('hoofd_titel_bijv_cv_'); ?></h3>
+                                    <?php if (have_rows('eigenschap')) : ?>
+                                        <?php while (have_rows('eigenschap')) : the_row(); ?>
+                                            <h4><?php the_sub_field('titel_eigenschao'); ?></h4>
+                                            <?php the_sub_field('omschrijving'); ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                    <?php $voeg_knop_toe = get_sub_field('voeg_knop_toe'); ?>
+                                    <?php if ($voeg_knop_toe) { ?>
+                                        <a href="<?php echo $voeg_knop_toe['url']; ?>" target="<?php echo $voeg_knop_toe['target']; ?>"><?php echo $voeg_knop_toe['title']; ?></a>
+                                    <?php } ?>
+                                </div>
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>
@@ -90,9 +94,6 @@ get_header(); ?>
             </div>
         <?php endif; ?>
     <?php endwhile; ?>
-<?php else : ?>
-    <?php // no layouts found 
-        ?>
 <?php endif; ?>
 
 
