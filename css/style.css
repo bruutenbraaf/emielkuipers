@@ -313,7 +313,26 @@ nav {
             font-size: 16px;
             line-height: 42px;
             color: #3c3750;
-            font-weight: 500; }
+            font-weight: 500;
+            position: relative; }
+            nav .row .main_nav ul li a:after {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              right: 0;
+              width: 0;
+              bottom: -5px;
+              background: #3c3750;
+              height: 2px;
+              transition-property: width;
+              transition-duration: 0.3s;
+              transition-timing-function: ease-out; }
+            nav .row .main_nav ul li a:hover {
+              text-decoration: none; }
+            nav .row .main_nav ul li a:hover:after {
+              left: 0;
+              right: auto;
+              width: 100%; }
 
 .nav-up {
   top: -120px;
