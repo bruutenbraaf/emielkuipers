@@ -142,7 +142,6 @@ jQuery('.f_img').each(function () {
     .setTween(tween)
     .addTo(controller)
     .offset(-300)
-    .addIndicators();
 });
 
 
@@ -161,7 +160,6 @@ jQuery('.slide').each(function () {
     .setTween(tween)
     .addTo(controller)
     .offset(-320)
-    .addIndicators()
 });
 
 // Delay next page  

@@ -318,7 +318,7 @@ nav {
           nav .row .main_nav ul li a {
             font-size: 16px;
             line-height: 42px;
-            color: #3c3750; }
+            color: #313131; }
 
 .nav-up {
   top: -120px;
@@ -337,7 +337,7 @@ nav {
       overflow: hidden; }
       .in_h .int span p {
         font-size: 52px;
-        color: #3c3750;
+        color: #313131;
         font-weight: 700;
         position: relative;
         top: 80px;
@@ -348,8 +348,8 @@ nav {
           font-size: 52px;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
-          -moz-text-stroke-color: #3c3750;
-          -webkit-text-stroke-color: #3c3750;
+          -moz-text-stroke-color: #313131;
+          -webkit-text-stroke-color: #313131;
           -moz-text-stroke-width: 2px;
           -webkit-text-stroke-width: 2px; }
 
@@ -407,7 +407,7 @@ nav {
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
-    color: #3c3750;
+    color: #313131;
     opacity: 0.75;
     position: relative; }
     .int__p p:before {
@@ -482,7 +482,7 @@ nav {
       position: absolute;
       top: 0;
       right: 0px;
-      background: #3c3750;
+      background: #313131;
       width: 0%;
       height: 100%;
       z-index: 5; }
@@ -563,7 +563,7 @@ footer .cntx span {
     font-weight: bold;
     font-size: 46px;
     line-height: 52px;
-    color: #3c3750;
+    color: #313131;
     position: relative;
     top: 80px; }
 
@@ -676,7 +676,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    color: #3c3750;
+    color: #313131;
     position: relative;
     display: inline-block;
     padding: 10px 0px; }
@@ -687,7 +687,7 @@ footer {
       top: 0;
       width: 0%;
       height: 100%;
-      background: #3c3750;
+      background: #313131;
       z-index: 8;
       animation-delay: 0.3s; }
     .cntc a:after {
@@ -759,7 +759,7 @@ footer {
 footer .soc a {
   font-family: "SilkaMedium", Arial, sans-serif;
   font-size: 16px;
-  color: #3c3750;
+  color: #313131;
   margin-left: 60px;
   position: relative; }
   footer .soc a:before {
@@ -769,7 +769,7 @@ footer .soc a {
     top: 0;
     width: 100%;
     height: 0%;
-    background: #3c3750;
+    background: #313131;
     z-index: 8; }
   footer .soc a:after {
     content: "";
@@ -1114,7 +1114,7 @@ footer {
       position: absolute;
       right: 0;
       top: 0;
-      background: #3c3750; }
+      background: #313131; }
     .f_img .th_img:after {
       content: "";
       height: 100%;
@@ -1178,7 +1178,7 @@ footer {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    color: #3c3750;
+    color: #313131;
     opacity: 0.75;
     position: relative; }
     .f_p p:before {
@@ -1200,14 +1200,14 @@ footer {
   .cv h3 {
     font-weight: bold;
     font-size: 46px;
-    color: #3c3750;
+    color: #313131;
     font-family: "SilkaBold", Arial, sans-serif;
     position: relative; }
     .cv h3:before {
       content: "";
       width: 0%;
       height: 100%;
-      background: #3c3750;
+      background: #313131;
       position: absolute;
       z-index: 2; }
     .cv h3:after {
@@ -1222,12 +1222,12 @@ footer {
   .cv h4 {
     font-size: 16px;
     line-height: 24px;
-    color: #3c3750;
+    color: #313131;
     font-family: "SilkaBold", Arial, sans-serif; }
   .cv p {
     font-size: 16px;
     line-height: 24px;
-    color: #3c3750;
+    color: #313131;
     opacity: 0.75; }
   .cv .item {
     position: relative; }
@@ -1332,7 +1332,7 @@ footer {
   padding-top: 34px; }
   .in_h .inf h4 {
     font-size: 16px;
-    color: #3c3750;
+    color: #313131;
     font-family: "SilkaBold", Arial, sans-serif;
     position: relative; }
     .in_h .inf h4:before {
@@ -1398,7 +1398,7 @@ footer {
       transform: translateY(-50%);
       width: 56px;
       height: 56px;
-      background: #3c3750;
+      background: #313131;
       z-index: 3;
       display: flex;
       justify-content: center;
@@ -1477,7 +1477,7 @@ footer {
       position: absolute;
       top: 0;
       right: 0px;
-      background: #3c3750;
+      background: #313131;
       width: 0%;
       height: 100%;
       z-index: 5; }
@@ -1545,7 +1545,7 @@ footer {
 .fwc h2 {
   font-family: "SilkaBold", Arial, sans-serif;
   font-size: 46px;
-  color: #3c3750;
+  color: #313131;
   position: relative;
   display: inline; }
   .fwc h2:before {
@@ -1582,8 +1582,8 @@ footer {
       line-height: 46px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-color: #3c3750;
-      -webkit-text-stroke-color: #3c3750;
+      -moz-text-stroke-color: #313131;
+      -webkit-text-stroke-color: #313131;
       -moz-text-stroke-width: 1px;
       -webkit-text-stroke-width: 1px; }
 
