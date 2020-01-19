@@ -433,6 +433,114 @@ nav {
 
 .int__p {
   padding-top: 34px;
+  .more {
+    color: $color;
+    position: relative;
+    margin-top: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    &:hover {
+      padding: 10px 15px;
+      text-decoration: none;
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+    }
+    &:before {
+      content: "";
+      height: 1px;
+      top: 0px;
+      width: 100%;
+      left: 0px;
+      background: $color;
+      position: absolute;
+    }
+    &:after {
+      content: "";
+      height: 1px;
+      bottom: 0px;
+      width: 0%;
+      right: 0px;
+      background: $color;
+      position: absolute;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      transition-delay: 0.2s;
+    }
+    &:hover:after {
+      width: 100%;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      transition-delay: 0.2s;
+    }
+    span {
+      padding: 10px 0px;
+      background: #ffffff;
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      transition-delay: 0s;
+      margin-left:0;
+      margin-right:0px;
+      &:hover {
+        width: calc(100% + 15px);
+        margin-left:-15px;
+        margin-right:-15px;
+        padding: 10px 15px;
+        color: #ffffff;
+        background: $color;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        transition-delay: 0.6s;
+      }
+      &:before {
+        content: "";
+        height: 0%;
+        right: 0px;
+        width: 1px;
+        background: $color;
+        position: absolute;
+        top: 0px;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0.4s;
+      }
+      &:hover:before {
+        height: 100%;
+        --webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0s;
+      }
+      &:after {
+        content: "";
+        height: 0%;
+        left: 0px;
+        width: 1px;
+        bottom: 0px;
+        background: $color;
+        position: absolute;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0s;
+      }
+      &:hover:after {
+        height: 100%;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0.4s;
+      }
+    }
+  }
   p {
     font-style: normal;
     font-weight: normal;

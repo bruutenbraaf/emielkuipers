@@ -16,6 +16,10 @@ get_header(); ?>
                     <?php endif; ?>
                     <div class="offset-md-2 col-md-7 int__p">
                         <?php the_sub_field('intro_tekst'); ?>
+                        <?php $lees_meer_knop = get_sub_field('lees_meer_knop'); ?>
+                        <?php if ($lees_meer_knop) { ?>
+                            <a class="more" href="<?php echo $lees_meer_knop['url']; ?>" target="<?php echo $lees_meer_knop['target']; ?>"><span><?php echo $lees_meer_knop['title']; ?></span></a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

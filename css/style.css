@@ -418,6 +418,103 @@ nav {
 
 .int__p {
   padding-top: 34px; }
+  .int__p .more {
+    color: #3c3750;
+    position: relative;
+    margin-top: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s; }
+    .int__p .more:hover {
+      padding: 10px 15px;
+      text-decoration: none;
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s; }
+    .int__p .more:before {
+      content: "";
+      height: 1px;
+      top: 0px;
+      width: 100%;
+      left: 0px;
+      background: #3c3750;
+      position: absolute; }
+    .int__p .more:after {
+      content: "";
+      height: 1px;
+      bottom: 0px;
+      width: 0%;
+      right: 0px;
+      background: #3c3750;
+      position: absolute;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      transition-delay: 0.2s; }
+    .int__p .more:hover:after {
+      width: 100%;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      transition-delay: 0.2s; }
+    .int__p .more span {
+      padding: 10px 0px;
+      background: #ffffff;
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      transition-delay: 0s;
+      margin-left: 0;
+      margin-right: 0px; }
+      .int__p .more span:hover {
+        width: calc(100% + 15px);
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 10px 15px;
+        color: #ffffff;
+        background: #3c3750;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        transition-delay: 0.6s; }
+      .int__p .more span:before {
+        content: "";
+        height: 0%;
+        right: 0px;
+        width: 1px;
+        background: #3c3750;
+        position: absolute;
+        top: 0px;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0.4s; }
+      .int__p .more span:hover:before {
+        height: 100%;
+        --webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0s; }
+      .int__p .more span:after {
+        content: "";
+        height: 0%;
+        left: 0px;
+        width: 1px;
+        bottom: 0px;
+        background: #3c3750;
+        position: absolute;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0s; }
+      .int__p .more span:hover:after {
+        height: 100%;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-delay: 0.4s; }
   .int__p p {
     font-style: normal;
     font-weight: normal;
