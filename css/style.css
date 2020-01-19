@@ -421,8 +421,7 @@ nav {
   .int__p .more {
     color: #3c3750;
     position: relative;
-    margin-top: 0px;
-    display: inline-block;
+    top: 10px;
     font-weight: 600;
     padding: 10px 0;
     -webkit-transition-duration: 0.4s;
