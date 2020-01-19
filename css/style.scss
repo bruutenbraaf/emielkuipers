@@ -1753,15 +1753,16 @@ $proheight: 610px;
     margin: 0px 15px 20px 15px;
   }
   .proj .h__proj .im {
-    min-height: 388px;
+    height: 388px;
   }
   .proj .h__proj .im .im_g {
-    min-height: 388px;
+    height: calc(100% + 100px);
   }
   .in_h .int span p,
   footer .cntx span p {
     font-size: 28px;
     line-height: 46px;
+    padding-bottom:0px;
     b {
       font-size: 28px;
       line-height: 46px;
