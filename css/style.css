@@ -1356,7 +1356,7 @@ footer {
     font-family: "proxima-nova", sans-serif;
     font-weight: 700;
     position: relative;
-    line-height: 64px; }
+    line-height: 16px; }
     .in_h .inf h4:before {
       content: "";
       top: 0;
@@ -1369,7 +1369,12 @@ footer {
   .in_h .inf span {
     padding-bottom: 16px;
     display: block;
-    position: relative; }
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3c3750;
+    opacity: 0.75;
+    margin-bottom: 16px; }
     .in_h .inf span:before {
       content: "";
       top: 0;
