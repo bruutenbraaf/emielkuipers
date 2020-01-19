@@ -571,7 +571,7 @@ $proheight: 610px;
     }
     .im {
       width: 100%;
-      min-height: $proheight;
+      height: 610px;
       overflow: hidden;
       position: absolute;
       left: 0px;
@@ -1667,7 +1667,7 @@ $proheight: 610px;
     }
     .im {
       width: 100%;
-      min-height: $proheight;
+      height: $proheight;
       overflow: hidden;
       position: absolute;
       left: 0px;
@@ -1678,9 +1678,9 @@ $proheight: 610px;
 
 .im_g {
   width: 100%;
-  min-height: calc(100% + 100px);
+  height: calc(100% + 100px);
   position: absolute;
-  bottom: -100px;
+  top: -100px;
   left: 0;
   background-size: cover;
   &:before {
@@ -1749,16 +1749,17 @@ $proheight: 610px;
 
 @media (max-width: 1196px) {
   .proj .h__proj {
-    height: 288px;
+    height: 388px;
     margin: 0px 15px 20px 15px;
   }
   .proj .h__proj .im {
-    min-height: 288px;
+    min-height: 388px;
   }
   .proj .h__proj .im .im_g {
-    min-height: 288px;
+    min-height: 388px;
   }
-  .in_h .int span p {
+  .in_h .int span p,
+  footer .cntx span p {
     font-size: 28px;
     line-height: 46px;
     b {
@@ -1772,6 +1773,7 @@ $proheight: 610px;
       -webkit-text-stroke-width: 1px;
     }
   }
+
   .int__p p {
     font-size: 16px;
     line-height: 28px;
@@ -1782,7 +1784,7 @@ $proheight: 610px;
 }
 
 .im_ga {
-  bottom: 0px;
+  top: 0px;
 }
 
 .imgb {
@@ -1796,4 +1798,26 @@ $proheight: 610px;
 }
 
 @media (max-width: 768px) {
+  .soc {
+    .ml-auto {
+      margin-left: 0px !important;
+      a {
+        margin-left: 0px;
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .f_img {
+    margin: 65px 0px;
+    height: 488px;
+  }
+  .carrousel .slide {
+    height: 388px;
+  }
+  .proj_p .h__proj_p .im,
+  .proj_p .h__proj_p {
+    height: 488px;
+  }
 }

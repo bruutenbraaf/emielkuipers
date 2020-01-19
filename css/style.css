@@ -522,7 +522,7 @@ nav {
         color: #ffffff; }
     .proj .h__proj .im {
       width: 100%;
-      min-height: 610px;
+      height: 610px;
       overflow: hidden;
       position: absolute;
       left: 0px;
@@ -1523,7 +1523,7 @@ footer {
         color: #ffffff; }
     .proj_p .h__proj_p .im {
       width: 100%;
-      min-height: 610px;
+      height: 610px;
       overflow: hidden;
       position: absolute;
       left: 0px;
@@ -1531,9 +1531,9 @@ footer {
 
 .im_g {
   width: 100%;
-  min-height: calc(100% + 100px);
+  height: calc(100% + 100px);
   position: absolute;
-  bottom: -100px;
+  top: -100px;
   left: 0;
   background-size: cover; }
   .im_g:before {
@@ -1590,19 +1590,21 @@ footer {
 
 @media (max-width: 1196px) {
   .proj .h__proj {
-    height: 288px;
+    height: 388px;
     margin: 0px 15px 20px 15px; }
 
   .proj .h__proj .im {
-    min-height: 288px; }
+    min-height: 388px; }
 
   .proj .h__proj .im .im_g {
-    min-height: 288px; }
+    min-height: 388px; }
 
-  .in_h .int span p {
+  .in_h .int span p,
+  footer .cntx span p {
     font-size: 28px;
     line-height: 46px; }
-    .in_h .int span p b {
+    .in_h .int span p b,
+    footer .cntx span p b {
       font-size: 28px;
       line-height: 46px;
       -moz-text-fill-color: transparent;
@@ -1619,7 +1621,7 @@ footer {
   .proj .h__proj .inf h3 {
     font-size: 24px; } }
 .im_ga {
-  bottom: 0px; }
+  top: 0px; }
 
 .imgb {
   min-width: 100%;
@@ -1629,5 +1631,25 @@ footer {
   bottom: 0px;
   background-size: cover;
   background-position: center center; }
+
+@media (max-width: 768px) {
+  .soc .ml-auto {
+    margin-left: 0px !important; }
+    .soc .ml-auto a {
+      margin-left: 0px;
+      display: block;
+      width: 100%;
+      margin-bottom: 15px; }
+
+  .f_img {
+    margin: 65px 0px;
+    height: 488px; }
+
+  .carrousel .slide {
+    height: 388px; }
+
+  .proj_p .h__proj_p .im,
+  .proj_p .h__proj_p {
+    height: 488px; } }
 
 /*# sourceMappingURL=style.css.map */

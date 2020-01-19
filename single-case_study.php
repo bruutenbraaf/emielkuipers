@@ -18,7 +18,7 @@ get_header(); ?>
                     <div class="offset-md-2 col-md-5 int__p">
                         <?php the_sub_field('intro_tekst'); ?>
                     </div>
-                    <div class="offset-md-1 ol-md-2 inf">
+                    <div class="offset-md-1 col-md-2 inf">
                         <h4><?php _e('Cliënt', 'emiel'); ?></h4>
                         <span><?php the_title(); ?></span>
                         <h4><?php _e('Rol', 'emiel'); ?></h4>

@@ -15,15 +15,24 @@
                     <p>Emailadres</p>
                 </span>
                 <span class="s-t">
-                    <a href="mailto:info@emielkuipers.nl">info@emielkuipers.nl</a>
+                    <?php $e_mailadres = get_field('e-mailadres', 'option'); ?>
+                    <?php if ($e_mailadres) { ?>
+                        <a href="<?php echo $e_mailadres['url']; ?>" target="<?php echo $e_mailadres['target']; ?>"><?php echo $e_mailadres['title']; ?></a>
+                    <?php } ?>
                 </span>
             </div>
-            <div class="col-md-12 d-flex soc">
-                <div class="ml-auto">
-                    <a href="mailto:info@emielkuipers.nl">info@emielkuipers.nl</a>
-                    <a href="mailto:info@emielkuipers.nl">info@emielkuipers.nl</a>
+            <?php if (have_rows('socials', 'option')) : ?>
+                <div class="col-md-12 d-flex soc">
+                    <div class="ml-auto">
+                        <?php while (have_rows('socials', 'option')) : the_row(); ?>
+                            <?php $social = get_sub_field('social'); ?>
+                            <?php if ($social) { ?>
+                                <a href="<?php echo $social['url']; ?>" target="<?php echo $social['target']; ?>"><?php echo $social['title']; ?></a>
+                            <?php } ?>
+                        <?php endwhile; ?>
+                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 </footer>

@@ -17,11 +17,11 @@
             <div class="row d-flex align-items-center">
                 <?php $brading = get_field('brading', 'option'); ?>
                 <?php if ($brading) { ?>
-                    <a class="branding p-4" href="<?php echo get_home_url(); ?>">
+                    <a class="branding" href="<?php echo get_home_url(); ?>">
                         <img src="<?php echo $brading['url']; ?>" alt="<?php echo $brading['alt']; ?>" />
                     </a>
                 <?php } ?>
-                <div class="main_nav ml-auto p-4">
+                <div class="main_nav ml-auto">
                     <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
                 </div>
             </div>
