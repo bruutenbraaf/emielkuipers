@@ -436,9 +436,10 @@ nav {
   .more {
     color: $color;
     position: relative;
-    margin-top: 30px;
+    margin-top: 0px;
+    display: inline-block;
     font-weight: 600;
-    padding: 10px 0px;
+    padding: 10px 0;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -485,12 +486,12 @@ nav {
       -moz-transition-duration: 0.4s;
       transition-duration: 0.4s;
       transition-delay: 0s;
-      margin-left:0;
-      margin-right:0px;
+      margin-left: 0;
+      margin-right: 0px;
       &:hover {
         width: calc(100% + 15px);
-        margin-left:-15px;
-        margin-right:-15px;
+        margin-left: -15px;
+        margin-right: -15px;
         padding: 10px 15px;
         color: #ffffff;
         background: $color;
