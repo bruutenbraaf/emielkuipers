@@ -24,13 +24,13 @@ get_header(); ?>
                         <h4><?php _e('Rol', 'emiel'); ?></h4>
                         <span>
                             <?php
-                                    $rol_array = get_field('rol');
-                                    if ($rol_array) :
-                                        foreach ($rol_array as $rol_item) :
-                                            echo $rol_item;
-                                        endforeach;
-                                    endif;
-                                    ?>
+                            $rol_array = get_field('rol');
+                            if ($rol_array) :
+                                foreach ($rol_array as $rol_item) : ?>
+                                    <span><?php echo $rol_item; ?></span>
+                            <?php endforeach;
+                            endif;
+                            ?>
                         </span>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="offset-md-2 col-md-8">
-                <h2><?php _e('Wellicht ook interessant','emiel');?></h2>
+                <h2><?php _e('Wellicht ook interessant', 'emiel'); ?></h2>
             </div>
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
