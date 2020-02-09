@@ -436,7 +436,7 @@ nav {
   .more {
     color: $color;
     position: relative;
-    top:10px;
+    top: 10px;
     font-weight: 600;
     padding: 10px 0;
     -webkit-transition-duration: 0.4s;
@@ -1612,6 +1612,10 @@ footer {
         transition-delay: 1.7s;
       }
     }
+    .r-item {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -1934,4 +1938,22 @@ $proheight: 610px;
   .proj_p .h__proj_p {
     height: 488px;
   }
+}
+
+.mouse {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: black;
+  position: absolute;
+  z-index: 999;
 }

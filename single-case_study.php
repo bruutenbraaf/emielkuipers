@@ -27,7 +27,7 @@ get_header(); ?>
                             $rol_array = get_field('rol');
                             if ($rol_array) :
                                 foreach ($rol_array as $rol_item) : ?>
-                                    <span><?php echo $rol_item; ?></span>
+                                    <span class="r-item"><?php echo $rol_item; ?></span>
                             <?php endforeach;
                             endif;
                             ?>

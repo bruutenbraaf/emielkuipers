@@ -1481,6 +1481,9 @@ footer {
       background: #ffffff;
       position: absolute;
       transition-delay: 1.7s; }
+  .in_h .inf .r-item {
+    padding: 0;
+    margin: 0; }
 
 .carrousel {
   width: 130vw;
@@ -1754,5 +1757,20 @@ footer {
   .proj_p .h__proj_p .im,
   .proj_p .h__proj_p {
     height: 488px; } }
+.mouse {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999; }
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: black;
+  position: absolute;
+  z-index: 999; }
 
 /*# sourceMappingURL=style.css.map */
