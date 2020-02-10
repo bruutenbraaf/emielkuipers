@@ -15,6 +15,7 @@ function flexupdate_scripts()
 	wp_enqueue_script('slickslider', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array(), '1.0.0', true);
 	wp_enqueue_script('niceselect', get_template_directory_uri() . '/js/jquery.nice-select.min.js', array(), '1.0.0', false);
+	wp_enqueue_script('mouse', get_template_directory_uri() . '/js/jquery.mousefollower.js', array(), '1.0.0', true);
 
 	// Scrollmagic
 	wp_enqueue_script('TweenMax', get_template_directory_uri() . '/js/TweenMax.min.js', array(), '1.0.0', true);

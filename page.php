@@ -96,9 +96,6 @@ get_header(); ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
-
-
-
 <div class="lxp">
     <div class="ba slidein">
     </div>

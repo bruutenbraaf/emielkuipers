@@ -223,3 +223,20 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
+
+jQuery(function () {
+  jQuery(window).mousemove(function (event) {
+    jQuery('#mouse-pointer').css({
+      'top': event.pageY + 'px',
+      'left': event.pageX + 'px'
+    });
+  });
+});
+jQuery(function () {
+  jQuery('a, .nxt').hover(function () {
+    jQuery('#mouse-pointer').animate({ "width": "15px", "height": "15px" }, 200);
+  }, function () {
+    // on mouseout, reset the background colour
+    jQuery('#mouse-pointer').animate({ "width": "10px", "height": "10px" }, 200);
+  });
+});
