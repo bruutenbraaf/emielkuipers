@@ -9,8 +9,18 @@
   font-size: 16px; }
 
 h2 {
-  font-weight: bold; }
+  font-size: 52px;
+  color: #3c3750;
+  font-weight: 700;
+  position: relative;
+  top: 80px;
+  margin: 0px;
+  font-family: "proxima-nova", sans-serif;
+  line-height: 64px; }
   h2 b {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     -moz-text-stroke-color: #3c3750;
