@@ -17,7 +17,8 @@ h2 {
   margin: 0px;
   font-family: "proxima-nova", sans-serif;
   line-height: 64px; }
-  h2 b {
+  h2 b,
+  h2 strong {
     font-family: "proxima-nova", sans-serif;
     font-weight: 700;
     font-size: 52px;
