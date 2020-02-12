@@ -227,7 +227,7 @@ function hasScrolled() {
 
 
 var pointer = jQuery('#custom-pointer');
-var clickableLinks = jQuery('a[href], button');
+var clickableLinks = jQuery('a[href], button, .nxt');
 
 jQuery(document).ready(function() {
 	pointer.removeClass('is-hover');
