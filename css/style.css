@@ -2,25 +2,8 @@
 body {
   cursor: none; }
 
-figure#mouse-pointer {
-  background: rgba(60, 55, 80, 0.6);
-  border-radius: 100%;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  margin-left: -8px;
-  display: block;
-  z-index: 9999;
-  transform: translate(0%, -50%);
-  pointer-events: none;
-  backdrop-filter: invert(100%);
-  -webkit-backdrop-filter: invert(100%); }
-
-.hover {
-  width: 15px !important;
-  height: 15px !important; }
-
-a:hover, .nxt:hover {
+a:hover,
+.nxt:hover {
   cursor: none !important; }
 
 * {
@@ -1815,5 +1798,37 @@ footer {
   background: black;
   position: absolute;
   z-index: 999; }
+
+body,
+body * {
+  cursor: none; }
+
+#custom-pointer {
+  visibility: hidden;
+  mix-blend-mode: exclusion;
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body:hover #custom-pointer {
+    visibility: visible; }
+  #custom-pointer span {
+    display: block;
+    position: fixed;
+    background: #3c3750;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    transition: width 0.15s, height 0.15s;
+    transition-timing-function: cubic-bezier(0, -1, 0.5, 2);
+    z-index: 99999; }
+  #custom-pointer.is-hover span {
+    width: 30px;
+    height: 30px; }
 
 /*# sourceMappingURL=style.css.map */

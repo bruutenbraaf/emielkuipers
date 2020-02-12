@@ -50,8 +50,6 @@
     </div>
 </div>
 
-<figure id="mouse-pointer"></figure>
-
 <?php wp_footer(); ?>
 </body>
 

@@ -224,19 +224,28 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
-jQuery(function () {
-  jQuery(window).mousemove(function (event) {
-    jQuery('#mouse-pointer').css({
-      'top': event.pageY + 'px',
-      'left': event.pageX + 'px'
-    });
-  });
-});
-jQuery(function () {
-  jQuery('a, .nxt').hover(function () {
-    jQuery('#mouse-pointer').animate({ "width": "15px", "height": "15px" }, 200);
-  }, function () {
-    // on mouseout, reset the background colour
-    jQuery('#mouse-pointer').animate({ "width": "10px", "height": "10px" }, 200);
-  });
+
+
+var pointer = jQuery('#custom-pointer');
+var clickableLinks = jQuery('a[href], button');
+
+jQuery(document).ready(function() {
+	pointer.removeClass('is-hover');
+
+	jQuery(document).mousemove(function(e) {
+		var positionLeft = e.clientX - pointer.width()/2;
+		var positionTop = e.clientY - pointer.height()/2;
+		pointer.css({'left': positionLeft, 'top': positionTop});
+	});
+
+	// Change pointer when hover links
+	clickableLinks.hover( function() {
+		pointer.addClass('is-hover');
+	}, function() {
+		pointer.removeClass('is-hover');
+	});
+
+	clickableLinks.click( function() {
+		pointer.removeClass('is-hover');
+	});
 });
