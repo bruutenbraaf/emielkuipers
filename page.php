@@ -96,12 +96,6 @@ get_header(); ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
-<div class="lxp">
-    <div class="ba slidein">
-    </div>
-</div>
-
-
 <script>
     jQuery(document).ready(function() {
         window.setTimeout(function() {

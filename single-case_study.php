@@ -190,12 +190,6 @@ get_header(); ?>
     </div>
 </section>
 
-<div class="lxp">
-    <div class="ba slidein">
-    </div>
-</div>
-
-
 <script>
     jQuery(document).ready(function() {
         window.setTimeout(function() {

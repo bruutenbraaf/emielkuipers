@@ -42,14 +42,6 @@
     </div>
 </footer>
 
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
-
-<div class="lxss">
-    <div class="br">
-    </div>
-</div>
-
 <?php wp_footer(); ?>
 </body>
 

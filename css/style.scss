@@ -9,15 +9,6 @@ $color: #3c3750;
 
 // Nav height
 
-body {
-  cursor: none;
-}
-
-a:hover,
-.nxt:hover {
-  cursor: none !important;
-}
-
 $NavHeight: 136px;
 
 // Variables
@@ -1986,49 +1977,4 @@ $proheight: 610px;
   background: black;
   position: absolute;
   z-index: 999;
-}
-
-$pointer-size: 10px;
-$pointer-size-hover: 30px;
-
-body,
-body * {
-  cursor: none;
-}
-
-#custom-pointer {
-  visibility: hidden;
-  mix-blend-mode: exclusion;
-  body:hover & {
-    visibility: visible;
-  }
-
-  position: fixed;
-  top: -$pointer-size;
-  width: $pointer-size;
-  height: $pointer-size;
-  pointer-events: none;
-  z-index: 999999;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  span {
-    display: block;
-    position: fixed;
-    background: $color;
-    border-radius: 50%;
-    width: $pointer-size;
-    height: $pointer-size;
-    transition: width 0.15s, height 0.15s;
-    transition-timing-function: cubic-bezier(0, -1, 0.5, 2);
-    z-index: 99999;
-  }
-
-  &.is-hover {
-    span {
-      width: $pointer-size-hover;
-      height: $pointer-size-hover;
-    }
-  }
 }
