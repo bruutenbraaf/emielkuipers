@@ -87,7 +87,7 @@
                             <div class="carrousel-item">
                                 <?php $afbeelding_upload = get_sub_field('afbeelding_upload'); ?>
                                 <?php if ($afbeelding_upload) { ?>
-                                    <div class="carousel-img" style="background-image:url(<?php echo $afbeelding_upload['sizes']; ?>);" ?>
+                                    <div class="carousel-img" style="background-image:url(<?php echo $afbeelding_upload['url']; ?>);" ?>
                                     </div>
                                 <?php } ?>
                             </div>
@@ -121,7 +121,7 @@
         <?php elseif (get_row_layout() == 'volledige_afbeelding') : ?>
             <?php $afbeelding = get_sub_field('afbeelding'); ?>
             <?php if ($afbeelding) { ?>
-                <div class="full--img" style="background-image:url(<?php echo $afbeelding['sizes']['full_img']; ?>);">
+                <div class="full--img" style="background-image:url(<?php echo $afbeelding['url']['full_img']; ?>);">
                 </div>
             <?php } ?>
         <?php elseif (get_row_layout() == 'klanten') : ?>
@@ -255,7 +255,7 @@
                                                         <div class="d-flex">
                                                             <?php $icon = get_sub_field('icon'); ?>
                                                             <?php if ($icon) { ?>
-                                                                <div class="icon" style="background-image:url(<?php echo $icon['sizes']['thumbnail']; ?>);">
+                                                                <div class="icon" style="background-image:url(<?php echo $icon['url']['thumbnail']; ?>);">
                                                                 </div>
                                                             <?php } ?>
                                                             <div class="inf">
@@ -281,7 +281,7 @@
                     </div>
                     <?php $afbeelding = get_sub_field('afbeelding'); ?>
                     <?php if ($afbeelding) { ?>
-                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']; ?>);">
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['url']; ?>);">
                         </div>
                     <?php } ?>
                 </section>
@@ -302,7 +302,7 @@
                                                         <div class="d-flex">
                                                             <?php $icon = get_sub_field('icon'); ?>
                                                             <?php if ($icon) { ?>
-                                                                <div class="icon" style="background-image:url(<?php echo $icon['sizes']['thumbnail']; ?>);">
+                                                                <div class="icon" style="background-image:url(<?php echo $icon['url']['thumbnail']; ?>);">
                                                                 </div>
                                                             <?php } ?>
                                                             <div class="inf">
@@ -328,7 +328,7 @@
                     </div>
                     <?php $afbeelding = get_sub_field('afbeelding'); ?>
                     <?php if ($afbeelding) { ?>
-                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']; ?>);">
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['url']; ?>);">
                         </div>
                     <?php } ?>
                 </section>
@@ -361,7 +361,7 @@
                                             <?php $afbeelding = get_sub_field('afbeelding'); ?>
                                             <?php if ($afbeelding) { ?>
                                                 <div class="stap-img-outer">
-                                                    <div class="stap--img" style="background-image:url(<?php echo $afbeelding['sizes']['xl']; ?>);">
+                                                    <div class="stap--img" style="background-image:url(<?php echo $afbeelding['url']['xl']; ?>);">
                                                     </div>
                                                 </div>
                                             <?php } ?>

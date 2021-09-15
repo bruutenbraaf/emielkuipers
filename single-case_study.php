@@ -48,7 +48,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="f_img">
-                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['sizes']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['url']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ get_header(); ?>
                                 <?php if ($afbeeldingen_images) :  ?>
                                     <?php foreach ($afbeeldingen_images as $afbeeldingen_image) : ?>
                                         <div class="slide">
-                                            <div class="img" style="background-image:url(<?php echo $afbeeldingen_image['sizes']; ?>);"></div>
+                                            <div class="img" style="background-image:url(<?php echo $afbeeldingen_image['url']; ?>);"></div>
                                         </div>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
