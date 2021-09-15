@@ -33,7 +33,14 @@ get_header(); ?>
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
                 'posts_per_page' => 2,
-                'order' => 'DESC'
+                'order' => 'DESC',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'onderwerp',
+                        'field' => 'id',
+                        'terms' => 4,
+                    ),
+                ),
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
@@ -56,8 +63,14 @@ get_header(); ?>
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
                 'posts_per_page' => 6,
-                'offset' => 2,
-                'order' => 'DESC'
+                'order' => 'DESC',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'onderwerp',
+                        'field' => 'id',
+                        'terms' => 3,
+                    ),
+                ),
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <div class="col-xl-10 offset-xl-1 pr-ov">
