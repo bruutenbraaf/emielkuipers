@@ -1885,6 +1885,39 @@ $proheight: 610px;
   }
 }
 
+.pr-ov {
+  h3 {
+    font-weight: 700;
+    font-size: 46px;
+    color: #3c3750;
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+.p-item {
+  a.inner {
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+  }
+  b {
+    color: $color;
+    display: block;
+  }
+  span {
+    color: #6d697b;
+    opacity: 0.75;
+    font-style: italic;
+    &:nth-of-type(n + 2) {
+      &:before {
+        content: "• ";
+      }
+    }
+  }
+}
+
 @media (max-width: 1196px) {
   .proj .h__proj {
     height: 388px;
