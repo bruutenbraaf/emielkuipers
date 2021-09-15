@@ -166,7 +166,8 @@ get_header(); ?>
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
                 'posts_per_page' => 1,
-                'order' => 'RAND'
+                'order' => 'RAND',
+                'post__not_in' => array($post->ID)
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
