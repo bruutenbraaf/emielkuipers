@@ -32,7 +32,6 @@ get_header(); ?>
         <div class="row">
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
-                'posts_per_page' => 2,
                 'order' => 'DESC',
                 'tax_query' => array(
                     array(
@@ -62,7 +61,6 @@ get_header(); ?>
             <?php endif; ?>
             <?php $loop = new WP_Query(array(
                 'post_type' => 'case_study',
-                'posts_per_page' => 6,
                 'order' => 'DESC',
                 'tax_query' => array(
                     array(
