@@ -34,7 +34,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="f_img">
-                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['sizes']['large']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['sizes']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                 </div>
                             </div>
                         </div>

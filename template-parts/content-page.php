@@ -1,12 +1,12 @@
 <?php if (have_rows('header_single')) : ?>
     <?php while (have_rows('header_single')) : the_row(); ?>
-        <section class="header--hp hm<?php if ( get_sub_field( 'remove_space' ) == 1 ) { ?> rms<?php } ?>">
+        <section class="header--hp hm<?php if (get_sub_field('remove_space') == 1) { ?> rms<?php } ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 offset-md-1 bread">
                         <?php if (function_exists('yoast_breadcrumb')) {
-                                    yoast_breadcrumb('');
-                                } ?>
+                            yoast_breadcrumb('');
+                        } ?>
                     </div>
                     <div class="col-md-8 offset-md-1">
                         <?php the_sub_field('titel'); ?>
@@ -39,8 +39,8 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if (get_the_post_thumbnail_url($post, 'large')) { ?>
-    <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'full_img'); ?>);">
+<?php if (get_the_post_thumbnail_url($post)) { ?>
+    <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post); ?>);">
     </div>
 <?php } ?>
 
@@ -87,7 +87,7 @@
                             <div class="carrousel-item">
                                 <?php $afbeelding_upload = get_sub_field('afbeelding_upload'); ?>
                                 <?php if ($afbeelding_upload) { ?>
-                                    <div class="carousel-img" style="background-image:url(<?php echo $afbeelding_upload['sizes']['large']; ?>);" ?>
+                                    <div class="carousel-img" style="background-image:url(<?php echo $afbeelding_upload['sizes']; ?>);" ?>
                                     </div>
                                 <?php } ?>
                             </div>
@@ -137,7 +137,7 @@
                             <?php foreach ($selecteer_klanten_om_te_tonen as $post) :  ?>
                                 <?php setup_postdata($post); ?>
                                 <div class="col-md-3 customer col-6 text-center">
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url($post, 'large'); ?>"></a>
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url($post); ?>"></a>
                                 </div>
                             <?php endforeach; ?>
                             <?php wp_reset_postdata(); ?>
@@ -173,7 +173,7 @@
                                                         <div class="col-md-6 m-first">
                                                             <a href="<?php the_permalink() ?>">
                                                                 <div class="thumb-crop">
-                                                                    <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                                    <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post); ?>);">
                                                                     </div>
                                                                 </div>
                                                             </a>
@@ -187,10 +187,10 @@
                                 <?php endif; ?>
                             <?php } else { ?>
                                 <?php $loop = new WP_Query(array(
-                                                    'post_type' => 'diensten',
-                                                    'posts_per_page' => 3,
-                                                    'order' => 'DESC'
-                                                )); ?>
+                                    'post_type' => 'diensten',
+                                    'posts_per_page' => 3,
+                                    'order' => 'DESC'
+                                )); ?>
                                 <?php if ($loop->have_posts()) : ?>
                                     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                         <div class="arch--item">
@@ -211,7 +211,7 @@
                                                     <div class="col-md-6">
                                                         <a href="<?php the_permalink() ?>">
                                                             <div class="thumb-crop">
-                                                                <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                                <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post); ?>);">
                                                                 </div>
                                                             </div>
                                                         </a>
@@ -228,7 +228,7 @@
                 </div>
             </section>
         <?php elseif (get_row_layout() == 'qoute') : ?>
-            <section class="qoute <?php the_sub_field( 'selecteer_kleur' ); ?>">
+            <section class="qoute <?php the_sub_field('selecteer_kleur'); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 offset-md-1">
@@ -281,7 +281,7 @@
                     </div>
                     <?php $afbeelding = get_sub_field('afbeelding'); ?>
                     <?php if ($afbeelding) { ?>
-                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']; ?>);">
                         </div>
                     <?php } ?>
                 </section>
@@ -328,7 +328,7 @@
                     </div>
                     <?php $afbeelding = get_sub_field('afbeelding'); ?>
                     <?php if ($afbeelding) { ?>
-                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']; ?>);">
                         </div>
                     <?php } ?>
                 </section>
@@ -412,7 +412,7 @@
                                         <div class="col-md-6 member">
                                             <a href="<?php the_permalink(); ?>">
                                                 <div class="img-holder">
-                                                    <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                    <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post); ?>);">
                                                     </div>
                                                 </div>
                                                 <span class="name"><?php the_title(); ?></span>
@@ -431,7 +431,7 @@
                         <?php $knop = get_sub_field('knop'); ?>
                         <?php if ($knop) { ?>
                             <div class="col-md-10 offset-md-1">
-                                    <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             </div>
                         <?php } ?>
                     </div>

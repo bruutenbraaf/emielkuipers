@@ -48,7 +48,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="f_img">
-                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['sizes']['large']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                <div class="th_img" style="background-image:url(<?php if ($upload_afbeelding) { ?><?php echo $upload_afbeelding['sizes']; ?><?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ get_header(); ?>
                                 <?php if ($afbeeldingen_images) :  ?>
                                     <?php foreach ($afbeeldingen_images as $afbeeldingen_image) : ?>
                                         <div class="slide">
-                                            <div class="img" style="background-image:url(<?php echo $afbeeldingen_image['sizes']['large']; ?>);"></div>
+                                            <div class="img" style="background-image:url(<?php echo $afbeeldingen_image['sizes']; ?>);"></div>
                                         </div>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
@@ -170,11 +170,11 @@ get_header(); ?>
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                    <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
+                    <?php $thumb = get_the_post_thumbnail_url($post); ?>
                     <div class="h__proj_p offset-md-1 col-md-10">
                         <a href="<?php the_permalink() ?>">
                             <div class="im">
-                                <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                 </div>
                             </div>
                             <div class="inf">
