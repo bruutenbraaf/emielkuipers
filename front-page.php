@@ -37,11 +37,11 @@ get_header(); ?>
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                    <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
+                    <?php $thumb = get_the_post_thumbnail_url($post); ?>
                     <div class="h__proj offset-md-1 col-md-10">
                         <a href="<?php the_permalink() ?>">
                             <div class="im">
-                                <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                <div class="im_g" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                 </div>
                             </div>
                             <div class="inf">
@@ -58,12 +58,10 @@ get_header(); ?>
 </section>
 <script>
     jQuery(document).ready(function() {
-        window.setTimeout(function() {
-            jQuery('.lxs').addClass('ready');
-            jQuery('nav').addClass('actv');
-            jQuery('.int').addClass('acv');
-            jQuery('.int__p').addClass('int__a');
-        }, <?php the_field('duur_loader', 'option'); ?>);
+        jQuery('.lxs').addClass('ready');
+        jQuery('nav').addClass('actv');
+        jQuery('.int').addClass('acv');
+        jQuery('.int__p').addClass('int__a');
     });
 </script>
 <?php get_footer(); ?>
